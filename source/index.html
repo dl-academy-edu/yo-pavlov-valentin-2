@@ -18,13 +18,14 @@
     <!-- Favicon -->
 
     <!-- build:css -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    
     <!-- endbuild -->
   </head>
   <body>
-    <script src="js/app.js" defer></script>
+    @@include('blocks/header.html')
     <header class="header contiener">
-        <img class="img_icon" src="DLK.svg" alt="">
+        <img class="img_icon" src="./img/DLK.svg" alt="">
         <ul class="header__list">
             <li class="header__list-item"><a class="header__list-link" href="#">BLOG</a></li>
             <li class="header__list-item"><a class="header__list-link" href="#">CATALOG</a></li>
@@ -38,7 +39,7 @@
     </section class="banner container">
     <h1 class="banner_text"> THE OOH NOO COLLECTION</h1>
     <button type="button" class="banner__btn btn link__info btn__js" aria-label="Open modal window">Explore now</button>
-    <img class="img_monster" src="./monster.png" alt="">
+    <img class="img_monster" src="./img/monster.png" alt="">
     <ul>
         <li class="banner_title"></li>
     </ul>
@@ -50,38 +51,38 @@
         <li class="switch__number">01</li>
          <li><button class="switch__active"></button></li>
        <ul class="switch__rectangel"><li><button class="switch__rectangel-one"></button></li>
-        <li><button class="switch__rectangel-two"></button></li>
-        <li><button class="switch__rectangel-three"></button></li>
+        <li><button type="button" class="switch__rectangel-two"></button></li>
+        <li><button type="button" class="switch__rectangel-three"></button></li>
     </ul>
     </div>
     <section class="Category container">
         <h2 class="Category_title">Category products</h2>
         <ul class="Category_list">
             <li class="products__list-one">
-                <img src="./sweeter.png" alt="Products">
+                <img src="./img/sweeter.png" alt="Products">
                 <p class="products__list-title-one">Apparel kids</p>
             </li>
-            <li class="products__list-two"> <img src="./sock.png" alt="Products">
+            <li class="products__list-two"> <img src="./img/sock.png" alt="Products">
                 <p class="products__list-title-two">Holiday shop</p>
             </li>
-            <li class="products__list-three"> <img src="./horse.png" alt="Products">
+            <li class="products__list-three"> <img src="./img/horse.png" alt="Products">
                 <p class="products__list-title-three">Toys</p>
             </li>
-            <li class="products__list-four"> <img src="./men on skate.png" alt="Products">
+            <li class="products__list-four"> <img src="./img/men on skate.png" alt="Products">
                 <p class="products__list-title-four">ACCESSORIES</p>
             </li>
         </ul>
         </section>
         <section>
         <ul  class="switch__category">
-            <li class="img_switch"><button type="button" class="switch__button" ><img src="./vector left.png" alt="switch"></button></li>
-            <li class="img_switch"><button type="button" class="switch__button" ><img src="./vector right.png" alt="switch"></button></li>
+            <li class="img_switch"><button type="button" class="switch__button" ><img src="./img/vector left.png" alt="switch"></button></li>
+            <li class="img_switch"><button type="button" class="switch__button" ><img src="./img/vector right.png" alt="switch"></button></li>
             <li class="switch__category-item">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to
                 furniture for kids and adults.</li>
         </ul>
     </section>
     <section>
-        <img class="woman_img" src="./woman.jpg" alt="">
+        <img class="woman_img" src="./img/woman.jpg" alt="">
         <h3 class="delivery__baner">Delivery</h3>
         <ul><li class="delivery__link">Delivery</li>
             <li class="delivery__guarantee"><a class="delyvery__link-item" href="#">Guarantee</a></li>
@@ -97,10 +98,10 @@
     <section class="Companies">
     <div>
     <ul class="Companies">
-        <li class="Companies__list-item"><img src="./mail.ru.svg" alt="#"></li>
-        <li  classs="Companies__list-item"><img src="./apple.svg" alt=""></li>
-        <li class="Companies__list-item"><img src="./eltex.svg" alt="#"></li>
-        <li class="Companies__list-item"><img src="./owox.svg" alt="#"></li>   
+        <li class="Companies__list-item"><img src="./img/mail.ru.svg" alt="#"></li>
+        <li  classs="Companies__list-item"><img src="./img/apple.png" alt=""></li>
+        <li class="Companies__list-item"><img src="./img/eltex.svg" alt="#"></li>
+        <li class="Companies__list-item"><img src="./img/owox.svg" alt="#"></li>   
 </ul>
 </div>
   </section>
@@ -155,9 +156,11 @@
     </div>
     <script src="./js/script.js"></script>
     <footer class="footer">
-         <li><img src="" alt=""></li><p>Navigation</p>
-         <li><img src="" alt=""></li><p>Customer Information</p>
-         <li><img src="" alt=""></li><p>Connect</p>
+        <ul class="footer__list">
+         <li class="Navigation__list"><p>Navigation</p></li>
+         <li class="Customer__list"><p>Customer Information</p></li>
+         <li class="Connect__list"><p>Connect</p></li>
+        </ul>
     </footer>
 </body>
 </html>
