@@ -1,0 +1,517 @@
+@import "_variables.base";
+@import "_mixins";
+
+/*
+  Import vendor libraries
+*/
+@import "vendor/_normalize";
+
+/*
+  Import utils classes and base styles
+*/
+@import "_utils";
+@import "_base";
+
+/*
+  Import all other blocks
+*/
+@import "_blocks/container";
+@import "_blocks/footer";
+
+/*
+  Ниже пример подключения других блоков
+
+  Каждый новый файл должен отвечать за конкретный блок в терминах БЭМ
+  (https://ru.bem.info/methodology/key-concepts/#%D0%B1%D0%BB%D0%BE%D0%BA)
+
+  Для именования селекторов давайте придерживаться стиля two dashes
+  (https://ru.bem.info/methodology/naming-convention/#%D1%81%D1%82%D0%B8%D0%BB%D1%8C-two-dashes)
+  block-name__element-name--modificator
+*/
+
+/*
+  Код ниже нужно удалить, он добавлен просто для примера
+  Не стал выносить в отдельный файл, но если бы блок coming-soon действительно был бы нужен,
+  то он должен был бы быть в файле _blocks/coming-soon.scss
+*/
+
+.banner_title {
+  height: 411px;
+  width: 1180px;  
+  margin-top:128px ;
+  background: #EEE4DB;  
+}
+
+.banner_text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #1E0606;
+  margin-top: 220px;
+  margin-left: 170px;
+  position: absolute;
+  width: 307px;
+  height: 88px;
+}
+
+ .banner__btn {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 22px;
+  gap: 10px;
+  position: absolute;
+  background: #1E0606;
+  color: #FFFFFF;
+  margin-left: 173px;
+  margin-top: 373px;
+}
+
+ .img_monster {
+   margin-left: 485px;
+   margin-top:38px;
+   position: absolute;
+}
+
+ .Category_title {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 38px;
+   line-height: 46px;
+
+   text-transform: uppercase;
+   color: #1E0606;
+   margin-top:668px ;
+   margin-left:40px ;
+}
+ 
+ .country {
+   font-family: 'Crimson Text';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 26px;
+
+   color: #1E0606;
+   display: flex;
+   margin-left: 172px;
+   margin-top: -230px;
+}
+
+.cost_order {
+
+   width: 1180px;
+   height: 39px;
+   background: #C29974;
+   font-family: 'Open Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 40px;
+   position: absolute;   
+   text-align: center;
+   text-transform: uppercase;
+   margin-top: 130px;
+   margin-left: 40px;
+   color: #FFFFFF;
+}
+
+.Category_list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.products__list-one {
+  background: url(image.png);
+  background-blend-mode: multiply;
+  height: 177px;
+  width: 244px;
+  background: #DBE4DB;
+  padding: 46px 18px 46px 23px;
+}
+
+
+.products__list-title-one {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  height: 64px;
+  width: 129px;
+  margin-top:-125px ;
+  color: #FFFFFF;
+  margin-left: 53px;
+}
+
+.products__list-two {
+  background: url(image.png);
+  background-blend-mode: multiply;
+  background: #EADDD3;
+  height: 244px;
+  width: 208px;
+  padding:13px 36px 13px 36px;
+}
+
+.products__list-title-two{
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  height: 64px;
+  width: 155px;
+  margin-top: -160px;
+  margin-left: 24px;
+  color: #FFFFFF;
+}
+
+.products__list-three{
+  background: url(.png);
+  background: #F8F2DA;
+  height: 270px;
+  width: 270px;
+  padding: 0px 5px 0px 5px;
+}
+
+.products__list-title-three{
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  margin-top: -157px;
+  color: #FFFFFF;
+}
+
+
+.products__list-four{
+  background: url(image.png);
+  background-blend-mode: multiply;
+  background: #D5D4E1;
+  height: 250px;
+  width: 240px;
+  padding: 10px 20px 10px 20px;
+}
+
+.products__list-title-four{
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  margin-top: -148px;
+  color: #FFFFFF;
+  margin-left: -13px;
+}
+
+.switch__category {
+  display: flex;
+  column-gap: 6px;
+}
+.switch__category-item {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  height: 44px;
+  width: 580px;
+  margin-left: 16px;
+  margin-top: 12px;
+}
+
+.switch__button{
+  height: 37px;
+  width: 37px;
+  display:flex ;
+  margin-top:15px ;
+  background: rgba(112, 187, 220, 0.2);
+}
+
+.switch__active{
+  background:rgba(30, 6, 6, 0.6);
+  width: 31px;
+  height: 3px;
+  margin-top:px;
+  margin-left: 32px;
+  display: flex;
+}
+
+.switch__number {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 73px;
+  color: rgba(30, 6, 6, 0.05);
+  margin-top: -407px;
+  margin-left: 33px;
+}
+
+.switch__rectangel-one {
+  width: 31px;
+  height: 3px;
+  background: #D6CAC2;
+  margin-top: -311px;
+  margin-left: 32px;
+  list-style-type: none;
+}
+
+.switch__rectangel-two {
+  width: 31px;
+  height: 3px;
+  background: #D6CAC2;
+  margin-top: -297px;
+  margin-left:32px ;
+  list-style-type: none;
+}
+  
+.switch3__rectangel-three {
+  width: 31px;
+  height: 3px;
+  background: #D6CAC2;
+  margin-top: -283px;
+  margin-left: 32px;
+  list-style-type: none;
+}
+     
+  .woman_img {
+  margin-top: 74px;
+  margin-left:45px ;
+}
+
+  .delivery__baner {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  margin-top: -533px;
+  margin-left: 645px;
+  color: #1E0606;
+}
+
+  .delivery__link {
+    height: 35px;
+    width: 84px;
+    background: rgba(112, 187, 220, 0.2);
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: #1E0606;
+    margin-left: 542px;
+    margin-top: -33px;
+    padding: 11px 180px 11px 60px;
+}
+
+  .delivery__guarantee {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    color: #1E0606;
+    margin-top:9px ;
+    margin-left:602px ;
+  }
+
+  .delivery__credit {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+  margin-top: 20px;
+  margin-left:602px ;
+  color: #1E0606;
+  position: absolute;
+  }
+
+.delyvery__link-item{
+  color: #1E0606;
+}
+
+  .paragraph__1 {
+  display: flex;
+  text-align: left;
+  width: 480px;
+  height: 66px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 87px;
+  margin-left: 645px;
+}
+
+  .paragraph__2 {
+  width: 480px;
+  height: 88px;
+  margin-left: 640px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  margin-top: -2px;
+}
+
+.button__learn {
+  display: flex;
+  flex-direction: row;
+  padding: 9px 22px;
+  gap: 10px;
+  width: 149px;
+  height: 40px;
+  background: #000000;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'Open Sans';
+  font-style: normal;
+  margin-top:24px;
+  margin-left:640px ;
+}
+
+.Companies {
+  width: 1180px;
+  height: 61px;
+  display: flex;
+  column-gap: 127px;
+  margin-top: 75px;
+}
+
+.About {
+  margin-top: 190px;
+  margin-left:43px ;
+  width: 543px;
+  height: 228px;
+  position: absolute;
+  background: #E1F0F7;
+}
+
+.About__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #1E0606;
+  margin-top: -25px;
+  margin-left: 35px;
+
+}
+
+.About__paragrath {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  margin-top:-15px ;
+  margin-left: 33px;
+}
+
+.button__about {
+  padding: 9px 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 123px;
+  height: 40px;
+  background: #000000;
+  color: #FFFFFF;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.About_US {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+  color: #1E0606;
+  margin-top: -40px;
+  margin-left: 30px;
+}
+
+.contacts {
+  background: #E1F0F7;
+  width: 485px;
+  height: 106px;
+  margin-top: 188px;
+  margin-left: 642px;
+  padding: 0 30px 102px 30px;
+  position: absolute;
+}
+
+.title__contacts {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #1E0606;
+  margin-top:-23px ;
+}
+
+.contacts__paragraph {
+  margin-left: ;
+  margin-top: -42px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  height: 66px;
+  width: 483px;
+}
+
+.maps {
+  width: 483px;
+  height: 196px;
+  background: url(.png);
+}
+
+button{border: none;}
+
+.footer{
+  height: 555px;
+  width: 1400px;
+  background:#434343 ;
+  margin-top:600px ;
+}
