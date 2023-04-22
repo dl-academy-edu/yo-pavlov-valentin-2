@@ -11,12 +11,17 @@
 */
 @import "_utils";
 @import "_base";
-
 /*
   Import all other blocks
 */
 @import "_blocks/container";
+@import "_blocks/title";
+
 @import "_blocks/footer";
+@import "_blocks/link";
+@import "_blocks/header";
+@import "_blocks/button";
+
 
 /*
   Ниже пример подключения других блоков
@@ -65,14 +70,15 @@
   text-align: center;
   text-transform: uppercase;
   flex-direction: row;
+  position: absolute;
   align-items: center;
   padding: 9px 22px;
   gap: 10px;
-  position: absolute;
   background: #1E0606;
   color: #FFFFFF;
   margin-left: 173px;
   margin-top: 373px;
+  
 }
 
  .img_monster {
@@ -182,7 +188,7 @@
 }
 
 .products__list-three{
-  background: url(.png);
+  background: url(image.png);
   background: #F8F2DA;
   height: 270px;
   width: 270px;
@@ -395,8 +401,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
   font-family: 'Open Sans';
-  font-style: normal;
-  margin-top:24px;
+  font-style: normal; 
   margin-left:640px ;
 }
 
@@ -489,7 +494,6 @@
 }
 
 .contacts__paragraph {
-  margin-left: ;
   margin-top: -42px;
   font-family: 'Open Sans';
   font-style: normal;

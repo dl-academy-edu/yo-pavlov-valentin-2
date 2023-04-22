@@ -21,7 +21,6 @@ a {
    
 .header__list-item-contact{
     display: flex;
-    
 }
 
 .header{
@@ -46,7 +45,6 @@ margin-right: auto;
     text-align: left;
     margin-left: 20px;
     height:21px;
-
 }
 .header__list-item-contact {
 font-family: 'Open Sans';
@@ -58,7 +56,11 @@ color: #1E0606;
 height: 23px;
 width: 92px;
 margin-right: -43px;
+animation: logo; 
 }
+
+
+
 
 .img_icon {
     height: 51px;

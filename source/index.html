@@ -18,30 +18,23 @@
     <!-- Favicon -->
 
     <!-- build:css -->
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet" />
     
     <!-- endbuild -->
   </head>
   <body>
     @@include('blocks/header.html')
-    <header class="header contiener">
-        <img class="img_icon" src="./img/DLK.svg" alt="">
-        <ul class="header__list">
-            <li class="header__list-item"><a class="header__list-link" href="#">BLOG</a></li>
-            <li class="header__list-item"><a class="header__list-link" href="#">CATALOG</a></li>
-            <li class="header__list-item"><a class="header__list-link" href="#">ABOUT US</a></li>
-        </ul>
-        <img class="search-icon" src="search_icon.png" alt="">
-        <ul>
-            <li class="header__list-item-contact"><a class="header__list-link" href="#">CONTACT US</a></li>
-        </ul>
-    </header>
+  
     </section class="banner container">
     <h1 class="banner_text"> THE OOH NOO COLLECTION</h1>
-    <button type="button" class="banner__btn btn link__info btn__js" aria-label="Open modal window">Explore now</button>
     <img class="img_monster" src="./img/monster.png" alt="">
+   @@include('blocks/button.html',{
+    'button': "Explore now"
+   })
+    
     <ul>
         <li class="banner_title"></li>
+        
     </ul>
     <p class="country">Designed in Slovenia</p>
     <p class="cost_order">Free (continental) USA shipping on all orders of $100 USD or more!</p>
@@ -56,7 +49,9 @@
     </ul>
     </div>
     <section class="Category container">
-        <h2 class="Category_title">Category products</h2>
+      @@include('blocks/title.html',{
+        'title' : "Category Products"
+      })
         <ul class="Category_list">
             <li class="products__list-one">
                 <img src="./img/sweeter.png" alt="Products">
@@ -83,7 +78,9 @@
     </section>
     <section>
         <img class="woman_img" src="./img/woman.jpg" alt="">
-        <h3 class="delivery__baner">Delivery</h3>
+        @@include('blocks/title.html',{
+            'title' : "Delivery"
+          })
         <ul><li class="delivery__link">Delivery</li>
             <li class="delivery__guarantee"><a class="delyvery__link-item" href="#">Guarantee</a></li>
             <li class="delivery__credit"><a class="delyvery__link-item" href="#">Credit</a></li>
@@ -93,7 +90,9 @@
             i am completely shocked that four years have flown by. It's simply magical.</p>
         <p class="paragraph__2">What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy
             place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-      <button class="button__learn">Learn more</button>
+            @@include('blocks/button.html',{
+                'button': "LEARN MORE"
+               })
     </section>
     <section class="Companies">
     <div>
@@ -106,14 +105,21 @@
 </div>
   </section>
     <section class="About contiener">
-        <h4 class="About__title">Design life kids</h4>
+        @@include('blocks/title.html',{
+            'title' : "Design Life Kids"
+          })
         <p class="About_US">About Us</p>
         <p class="About__paragrath">Some days i feel like i've been working on dlk my entire life and there are other days that
             i am completely shocked that four years have flown by. It's simply magical. </p>
-        <button class="button__about">BUY NOW</button>
+            @@include('blocks/button.html',{
+                'button': "buy now"
+               })
+        
     </section>
     <section class="contacts contiener">
-        <h5 class="title__contacts">Contacts</h5>
+        @@include('blocks/title.html',{
+            'title' : "Contacts"
+          })
         <p class="contacts__paragraph">Some days i feel like i've been working on dlk my entire life and there are other days that
             i am completely shocked that four years have flown by. It's simply magical.</p>
         <section class="maps container">

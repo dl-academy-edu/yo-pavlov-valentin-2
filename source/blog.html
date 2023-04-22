@@ -19,25 +19,14 @@
         <!-- Favicon -->
     
         <!-- build:css -->
-        <link href="./css/blog.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/common.css">
+        <link href="css/style.min.css" rel="stylesheet" />
+        
+        
         <!-- endbuild -->
     </head>
 </head>
 <body>
-    <body>
-        <header class="header contiener">
-            <img class="img_icon" src="./img/DLK.svg" alt="">
-            <ul class="header__list">
-                <li class="header__list-item"><a class="header__list-link" href="#">BLOG</a></li>
-                <li class="header__list-item"><a class="header__list-link" href="#">CATALOG</a></li>
-                <li class="header__list-item"><a class="header__list-link" href="#">ABOUT US</a></li>
-            </ul>
-            <img class="search-icon" src="search_icon.png" alt="">
-            <ul>
-                <li class="header__list-item-contact"><a class="header__list-link" href="#">CONTACT US</a></li>
-            </ul>
-        </header>
+        @@include('blocks/header.html')
         <main class="blog">
             <section class="blog__nav">
                 <h2 class="blog__nav-title">Blog</h2>
@@ -46,7 +35,6 @@
                 <img src="./img/vectore-home.png" alt="home" class="blog__nav-img">
                 <p class="home-blog">Blog</p>
             </ul>
-                
             </section>
             <section>
                 <ul class="blog__list">
@@ -65,9 +53,8 @@
                     <button class="page" >3</button>
                     <button class="page" >4</button>
                     <button class="vector__right-page"><img src="./img/vector-right.png" alt="right"></button>
+                    <script src="js/app.js" defer></script>
             </section>
         </main> 
-    </body> 
-    <script src="js/app.js" defer></script>
 </body>
 </html>

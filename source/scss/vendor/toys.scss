@@ -1,0 +1,115 @@
+@import "_variables.base";
+@import "_mixins";
+
+/*
+  Import vendor libraries
+*/
+@import "vendor/_normalize";
+
+/*
+  Import utils classes and base styles
+*/
+@import "_utils";
+@import "_base";
+
+/*
+  Import all other blocks
+*/
+@import "_blocks/container";
+@import "_blocks/footer";
+@import "_blocks/link";
+@import "_blocks/header";
+@import"_blocks/header";
+
+/*
+  Ниже пример подключения других блоков
+
+  Каждый новый файл должен отвечать за конкретный блок в терминах БЭМ
+  (https://ru.bem.info/methodology/key-concepts/#%D0%B1%D0%BB%D0%BE%D0%BA)
+
+  Для именования селекторов давайте придерживаться стиля two dashes
+  (https://ru.bem.info/methodology/naming-convention/#%D1%81%D1%82%D0%B8%D0%BB%D1%8C-two-dashes)
+  block-name__element-name--modificator
+*/
+
+/*
+  Код ниже нужно удалить, он добавлен просто для примера
+  Не стал выносить в отдельный файл, но если бы блок coming-soon действительно был бы нужен,
+  то он должен был бы быть в файле _blocks/coming-soon.scss
+*/
+button{border: 0;}
+
+.toys__nav-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.home__list{
+    display: flex;
+}
+
+.vector__img{
+    width: 8px;
+    height: 12px;
+}
+
+.filter{
+    background-color: rgba(125, 151, 218, 0.2);
+    width: 1400px;
+    height: 254px;
+    display:flex;
+}
+
+.ellipse__one{
+    width: 24px;
+    height: 24px;
+}
+
+.ellipse__two{
+    width: 7px;
+    height: 7px;
+}
+
+.rectangle__one{
+    width: 46px;
+    height: 4px;
+}
+
+.rectangle__two{
+    width: 188px;
+    height: 4px;
+}
+
+.production{
+    display: flex;
+    width: 1180px;
+    height: 1090px;
+    flex-wrap:wrap;
+}
+
+.production__img{
+    background: url(image.png);
+    background-blend-mode: multiply;
+}
+
+.button__amount-item{
+    width: 80px;
+    height: 35px;
+    background-color: #F3D0DB;
+    padding: 7px 28px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.button__amount {
+    display: flex;
+}
