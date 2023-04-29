@@ -26,19 +26,17 @@
     @@include('blocks/header.html')
   
     </section class="banner container">
+    <ul class="banner">
     <h1 class="banner_text"> THE OOH NOO COLLECTION</h1>
-    <img class="img_monster" src="./img/monster.png" alt="">
+    <img class="img_monster" src="../img/monster.png" alt="#">
    @@include('blocks/button.html',{
     'button': "Explore now"
    })
-    
-    <ul>
         <li class="banner_title"></li>
-        
-    </ul>
     <p class="country">Designed in Slovenia</p>
     <p class="cost_order">Free (continental) USA shipping on all orders of $100 USD or more!</p>
     </section>
+   </ul>
     <div>
         <ul>
         <li class="switch__number">01</li>
@@ -48,22 +46,22 @@
         <li><button type="button" class="switch__rectangel-three"></button></li>
     </ul>
     </div>
-    <section class="Category container">
       @@include('blocks/title.html',{
         'title' : "Category Products"
       })
-        <ul class="Category_list">
+      <section class="category container">
+        <ul class="category_list">
             <li class="products__list-one">
-                <img src="./img/sweeter.png" alt="Products">
+                <img src="../img/sweeter.png" alt="Products">
                 <p class="products__list-title-one">Apparel kids</p>
             </li>
-            <li class="products__list-two"> <img src="./img/sock.png" alt="Products">
+            <li class="products__list-two"> <img src="../img/sock.png" alt="Products">
                 <p class="products__list-title-two">Holiday shop</p>
             </li>
-            <li class="products__list-three"> <img src="./img/horse.png" alt="Products">
+            <li class="products__list-three"> <img src="../img/horse.png" alt="Products">
                 <p class="products__list-title-three">Toys</p>
             </li>
-            <li class="products__list-four"> <img src="./img/men on skate.png" alt="Products">
+            <li class="products__list-four"> <img src="../img/men on skate.png" alt="Products">
                 <p class="products__list-title-four">ACCESSORIES</p>
             </li>
         </ul>

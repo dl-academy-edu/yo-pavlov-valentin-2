@@ -1,15 +1,3 @@
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-.container {
-    max-width: 1178;
-    margin: 0 auto;
-}
-
 .header{
     display: flex;
 }
@@ -25,13 +13,7 @@ a {
 }
 
 .header{
-height: 52px;
-width: 1178px;
-left: 112px;
-top: 50px;
 display: flex;
-align-items: center;
-margin-right: auto;
 }
 .header__list {
     display: flex;
@@ -43,10 +25,7 @@ margin-right: auto;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    text-align: left;
     margin-left: 20px;
-    height:21px;
-
 }
 .header__list-item-contact {
 font-family: 'Open Sans';
