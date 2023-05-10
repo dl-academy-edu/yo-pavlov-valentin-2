@@ -1,0 +1,47 @@
+.animation {
+    &__list {
+        display: flex;
+        column-gap: 20px;
+        margin-left: 70px;
+    }
+    &__home {
+        font-family: 'Crimson Text';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #1E0606;
+      }
+      &__nav {
+        font-family: 'Crimson Text';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #1E0606;
+
+        &-img {
+          width: 8px;
+          height: 12px;
+          margin-top: 29px;
+        }
+        &-title {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 49px;
+          text-transform: uppercase;
+          color: #1E0606;
+          margin-left: 110px;
+        }
+      }
+      &__title {
+        font-family: 'Crimson Text';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #1E0606;
+        opacity: 0.5;
+      }
+}

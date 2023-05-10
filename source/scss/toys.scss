@@ -12,15 +12,37 @@
     display: flex;
 }
 
+.products__catalog {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+} 
+
+.toys__products {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+    opacity: 0.5;
+}
+
+
 .vector__img{
     width: 8px;
     height: 12px;
+    margin-top: 29px;
 }
 
 .filter{
     background-color: rgba(125, 151, 218, 0.2);
     width: 1400px;
-    display:flex;
+    height: 254px;
+    display: flex;
 }
 
 .ellipse__one{
@@ -45,14 +67,37 @@
 
 .production{
     display: flex;
-    width: 1180px;
-    height: 1090px;
-    flex-wrap:wrap;
+    max-width: 1080px;
+    max-height: 1090px;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+
+.cost__production {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #1E0606;
+}
+
+.toys__name {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #1E0606;
 }
 
 .production__img{
     background: url(image.png);
     background-blend-mode: multiply;
+
 }
 
 .button__amount-item{
@@ -68,6 +113,37 @@
     color: #1E0606;
 }
 
+.button__amount-list {
+    display: flex;
+    :hover {
+        background: #EDDEEB;
+    }
+}
+
 .button__amount {
     display: flex;
+    width: 80px;
+    height: 35px;
+    background: #FFFFFF;
+    padding: 7px 19px;
+    :hover {
+        background: #EDDEEB;
+    }
+}
+
+.button__apply {
+    display: flex;
+    align-items: center;
+    padding: 9px 22px;
+    background: #000000;
+    width: 95px;
+    height: 40px;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
 }

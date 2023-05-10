@@ -24,8 +24,15 @@
     <body>
         @@include('blocks/header.html')
     <main>
+
         <div class="container">
-         <h1 class="title">CONTACT US</h1>
+         <h1 class="contact__title">CONTACT US</h1>
+        <ul class="contact__list">
+         <p class="contact__home">Home</p>
+         <img class="contact__nav-img" src="../img/vectore-home.png" alt="#">
+         <p class="contact__nav-title">Contact us</p>
+        </ul>
+        <section class="contact">
          <form action="#" class="form">
         <div class="form__wrapper">
             <div class="form__inner">
@@ -46,26 +53,25 @@
     <div class="form__message">
         <label for="message" class="form__label-message">Message</label>
         <input type="message" id="message" class="form__input-message">
-    </div>
-       <ul>
-        <li class="agree__checkbox">
-            <input type="checkbox">
-            <p class="paragraph__checkbox">By clicking on the button, you consent to the processing of your personal data</p>
-        </li>
-       </ul>
-    
-    <button type="submit" class="button__contact">SUBMIT</button>
-            <ul>
-                <li>
-                    <p class="contact__paragraph">Our support team are on-hand to assist with any issues you are experiencing. </p>
-                    <p class="contact__paragraph">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible. </p>
-                    <p class="contact__notice">An expert is waiting to help you!</p>
-                </li>
-            </ul>
+    </div>   
+
+        <input type="checkbox" class="custom__checkbox" id="happy">
+        <label for="">By clicking on the button, you consent to the processing of your personal data</label>
+
+        @@include('blocks/button.html',{
+            'button': "submit",
+            'class' : "contact__button"
+           })
     </form> 
-    </div>
-    
-    
+    </div> 
+    <section class="contact__text">
+        <ul class="contact__text">
+                <p class="contact__paragraph">Our support team are on-hand to assist with any issues you are experiencing. </p>
+                <p class="contact__paragraph">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible. </p>
+                <p class="contact__notice">An expert is waiting to help you!</p>
+        </ul>
+    </section> 
+</section>
     </main>
     </body>
     <script src="js/app.js" defer></script>

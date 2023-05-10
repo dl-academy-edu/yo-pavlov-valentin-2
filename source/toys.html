@@ -31,12 +31,12 @@
                 <ul class="home__list">
                     <p class="home">Home</p>
                     <img class="vector__img" src="./img/vectore-home.png" alt="">
-                    <p class="Products__catalog">Catalog</p>
+                    <p class="products__catalog">Catalog</p>
                     <img class="vector__img" src="./img/vectore-home.png" alt="">
                     <p class="toys__products">Toys</p>
                 </ul>
             </section>
-            <section class="filter">
+            <section class="filter container">
                 <h3 class="cost">cost</h3><img class="ellipse__one" src="./img/Ellipse.png" alt=""><img class="ellipse__two" src="./img/Ellipse 2.png" alt=""><img class="rectangle__one" src="./img/Rectangle 1.png" alt=""><img class="rectangle__two" src="./img/Rectangle 1.png" alt="">
                 <h4 class="color">color</h4>
                 <li class="checkbox__color"><input type="checkbox"></li><p class="colors">black</p>
@@ -47,30 +47,33 @@
                 <li class="checkbox__delivery"><input type="checkbox"></li>
                 <li class="checkbox__delivery"><input type="checkbox"></li>
                 <h6 class="Amount">Amount</h6>
-            <ul class="button__amount">
-                <li class="button__amount-item"><button>0-5</button></li>
-                <li class="button__amount"><button>10-20</button></li>
-                <li class="button__amount"><button>20-50</button></li>
+            <ul class="button__amount-list">
+                <button type="button" class="button__amount-item">0-5</button>
+                <button type="button" class="button__amount">10-20</button>
+                <button type="button" class="button__amount">20-50</button>
             </ul>    
-                <li class="button__apply"><button>apply</button></li>
+            @@include('blocks/button.html',{
+                'button': "apply",
+                'class' : "button__apply" 
+               })
             </section>
             <section  class="production">
                 <ul class="production">
-                    <li><img class="production__img" src="./img/shark.png" alt=""></li><p>SHARKY BEAN BAG CHAIR COVER</p><p>$60.00 USD</p>
-                    <li><img class="production__img" src="./img/brass.png" alt=""></li><p>BRASS DECO FRAMES</p><p>$66.00 USD</p>
-                    <li><img class="production__img" src="./img/dress-blog.png" alt=""></li><p>CIBO FULL APRON</p><p>$60.00 USD</p>
-                    <li><img class="production__img" src="./img/gatcha.png" alt=""></li><p>GATCHA GATCHA GUMBALL MACHINE</p><p>$56.00 USD</p>
-                    <li><img class="production__img" src="./img/candle.png" alt=""></li><p>CHRISTMAS ADVENT SCENTED CANDLE</p><p>$29.00 USD</p>
-                    <li><img class="production__img" src="./img/lamp.png" alt=""></li><p>TANGLE SPINNING TEA LIGHT</p><p>$56.00 USD</p>
+                    <li><img class="production__img" src="../img/shark.png" alt="#"></li><p class="toys__name">SHARKY BEAN BAG CHAIR COVER</p><p class="cost__production">$60.00 USD</p>
+                    <li><img class="production__img" src="../img/brass.png" alt="#"><p class="tooys__name">BRASS DECO FRAMES</p><p class="cost__production">$66.00 USD</p></li>
+                    <li><img class="production__img" src="../img/dress-blog.png" alt="#"></li><p class="toys__name">CIBO FULL APRON</p><p class="cost__production">$60.00 USD</p>
+                    <li><img class="production__img" src="../img/gatcha.png" alt="#"></li><p class="toys__name">GATCHA GATCHA GUMBALL MACHINE</p><p class="cost__production">$56.00 USD</p>
+                    <li><img class="production__img" src="../img/candle.png" alt="#"></li><p class="toys__name">CHRISTMAS ADVENT SCENTED CANDLE</p><p class="cost__production">$29.00 USD</p>
+                    <li><img class="production__img"  src="../img/lamp.png" alt="#"><p class="tooys__name">TANGLE SPINNING TEA LIGHT</p><p class="cost__production">$56.00 USD</p></li>
                 </ul>
             </section>
             <section class="pages">
-                <button class="vector__left-page"><img src="./img/vectore-left.png" alt="left"></button>
+                <button class="vector__left-page"><img src="../img/vectore-left.png" alt="left"></button>
                 <button class="page__active" >1</button>
                 <button class="page" >2</button>
                 <button class="page" >3</button>
                 <button class="page" >4</button>
-                <button class="vector__right-page"><img src="./img/vector-right.png" alt="right"></button>
+                <button class="vector__right-page"><img src="../img/vector-right.png" alt="right"></button>
             </section>
         </main>
     </body>
