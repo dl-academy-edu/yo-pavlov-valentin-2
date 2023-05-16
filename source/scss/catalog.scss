@@ -20,7 +20,7 @@
     font-size: 20px;
     line-height: 26px;
     color: #1E0606;
-    opacity: 0,5;
+    opacity: 0.5;
   }
     &__nav-img {
       width: 8px;
@@ -70,6 +70,13 @@
       width: 1180px;
       margin-left: -295px;
       margin-top: 34px;
+      :hover {
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+    :active {
+        text-decoration-line: underline;
+    }
     }
     &__list-second {
       display: flex;
@@ -78,6 +85,13 @@
       flex-wrap: wrap;
       margin-left: -95px;
       margin-top: 15px;
+      :hover {
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+    :active {
+        text-decoration-line: underline;
+    }
     }
     &__list-one {
       background: url(image.png);

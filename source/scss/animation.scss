@@ -1,5 +1,5 @@
 .animation {
-    &__list {
+    &__nav-list {
         display: flex;
         column-gap: 20px;
         margin-left: 70px;
@@ -45,3 +45,101 @@
         opacity: 0.5;
       }
 }
+.animation__list-road--first {
+  margin-top: 20px;
+}
+
+.animation__list-road--second {
+  margin-top: 55px;
+  }
+ .animation__cars {
+  display: flex;
+  margin-top: -370px;
+  position: absolute;
+  animation: traffic 5s infinite;
+ }
+
+ @keyframes traffic {
+  0%{
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+ }
+
+ .animation__list-lantern {
+  margin-top: -370px;
+  margin-left: 546px;
+ }
+
+ .animation__list-taxi {
+  margin-top: -157px;
+  margin-left: 0px;
+  animation: taxi 6s  infinite ;
+  position: absolute;
+ }
+
+ @keyframes taxi {
+  0% {
+      right: 0%;
+  } 
+  50% {
+      right: 17%;
+    
+  }
+  100% {
+    right: 100%;
+  }
+ }
+
+
+
+
+ .animation__list-woman--suitcase {
+  margin-left: 250px;
+  margin-top: 50px;
+  position: absolute;
+ }
+
+ .animation__list-woman {
+  margin-top: -122px;
+  margin-left: 265px;
+  position: absolute;
+ }
+
+ .animation__list-lantern--first {
+  margin-top: -398px;
+  margin-left: 1130px;
+  position: absolute;
+ }
+
+ .animation__list-car--first {
+  margin-left: -60px;
+ }
+
+ .animation__list-car--second {
+  margin-left: 215px;
+
+ }
+
+ .animation__list-car--third {
+  margin-left: 100px;
+ }
+
+.animation__list-car--fourth {
+  margin-left: 320px;
+}
+
+.animation__list-man {
+  margin-top: -247px;
+  margin-left: 375px;
+  position: absolute;
+}
+
+
+  
+
+
+
+
