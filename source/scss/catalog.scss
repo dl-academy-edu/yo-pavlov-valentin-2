@@ -64,6 +64,7 @@
 
   .category {
     flex-wrap: wrap;
+    display: flex;
     &__list-first {
       display: flex;
       column-gap: 20px;

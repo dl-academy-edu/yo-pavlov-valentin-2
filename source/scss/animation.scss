@@ -56,7 +56,8 @@
   display: flex;
   margin-top: -370px;
   position: absolute;
-  animation: traffic 5s infinite;
+  animation: traffic 6s 1s infinite ;
+  
  }
 
  @keyframes traffic {
@@ -66,6 +67,7 @@
   100% {
     left: 100%;
   }
+  
  }
 
  .animation__list-lantern {
@@ -75,7 +77,7 @@
 
  .animation__list-taxi {
   margin-top: -157px;
-  margin-left: 0px;
+  
   animation: taxi 6s  infinite ;
   position: absolute;
  }
