@@ -18,58 +18,52 @@
     <!-- Favicon -->
 
     <!-- build:css -->
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet" />
     
     <!-- endbuild -->
   </head>
   <body>
     @@include('blocks/header.html')
-    <header class="header contiener">
-        <img class="img_icon" src="./img/DLK.svg" alt="">
-        <ul class="header__list">
-            <li class="header__list-item"><a class="header__list-link" href="#">BLOG</a></li>
-            <li class="header__list-item"><a class="header__list-link" href="#">CATALOG</a></li>
-            <li class="header__list-item"><a class="header__list-link" href="#">ABOUT US</a></li>
-        </ul>
-        <img class="search-icon" src="search_icon.png" alt="">
-        <ul>
-            <li class="header__list-item-contact"><a class="header__list-link" href="#">CONTACT US</a></li>
-        </ul>
-    </header>
-    </section class="banner container">
-    <h1 class="banner_text"> THE OOH NOO COLLECTION</h1>
-    <button type="button" class="banner__btn btn link__info btn__js" aria-label="Open modal window">Explore now</button>
-    <img class="img_monster" src="./img/monster.png" alt="">
-    <ul>
-        <li class="banner_title"></li>
+  
+    <section class="banner container">
+    <ul class="banner">
+    <h1 class="banner__text"> THE OOH NOO COLLECTION</h1>
+    <img class="banner__img" src="../img/monster.png" alt="#">
+   @@include('blocks/button.html',{
+    'button': "Explore now",
+    'class' : "banner__btn" 
+   })
+        <li class="banner__title"></li>
+    <p class="banner__country">Designed in Slovenia</p>
+    <p class="banner__cost">Free (continental) USA shipping on all orders of $100 USD or more!</p>
     </ul>
-    <p class="country">Designed in Slovenia</p>
-    <p class="cost_order">Free (continental) USA shipping on all orders of $100 USD or more!</p>
-    </section>
     <div>
-        <ul>
+    <ul class="switch__list">
         <li class="switch__number">01</li>
-         <li><button class="switch__active"></button></li>
-       <ul class="switch__rectangel"><li><button class="switch__rectangel-one"></button></li>
+        <li><button class="switch__active"></button></li>
+        <li><button type="button" class="switch__rectangel-one"></button></li>
         <li><button type="button" class="switch__rectangel-two"></button></li>
         <li><button type="button" class="switch__rectangel-three"></button></li>
     </ul>
     </div>
-    <section class="Category container">
-        <h2 class="Category_title">Category products</h2>
-        <ul class="Category_list">
-            <li class="products__list-one">
-                <img src="./img/sweeter.png" alt="Products">
-                <p class="products__list-title-one">Apparel kids</p>
+    </section>
+      @@include('blocks/title.html',{
+        'title' : "category products"
+      })
+      <section class="category container">
+        <ul class="category__list">
+            <li class="category__list-one">
+                <img src="../img/sweeter.png" alt="Products">
+                <p class="category__list-title-one">Apparel kids</p>
             </li>
-            <li class="products__list-two"> <img src="./img/sock.png" alt="Products">
-                <p class="products__list-title-two">Holiday shop</p>
+            <li class="category__list-two"> <img src="../img/sock.png" alt="Products">
+                <p class="category__list-title-two">Holiday shop</p>
             </li>
-            <li class="products__list-three"> <img src="./img/horse.png" alt="Products">
-                <p class="products__list-title-three">Toys</p>
+            <li class="category__list-three"> <img src="../img/horse.png" alt="Products">
+                <p class="category__list-title-three">Toys</p>
             </li>
-            <li class="products__list-four"> <img src="./img/men on skate.png" alt="Products">
-                <p class="products__list-title-four">ACCESSORIES</p>
+            <li class="category__list-four"> <img src="../img/men on skate.png" alt="Products">
+                <p class="category__list-title-four">ACCESSORIES</p>
             </li>
         </ul>
         </section>
@@ -81,48 +75,64 @@
                 furniture for kids and adults.</li>
         </ul>
     </section>
-    <section>
-        <img class="woman_img" src="./img/woman.jpg" alt="">
-        <h3 class="delivery__baner">Delivery</h3>
+    <section class="delivery container">
+        <img class="delivery__img" src="../img/woman.jpg" alt="#">
+        @@include('blocks/title.html',{
+            'title' : "Delivery"
+          })
         <ul><li class="delivery__link">Delivery</li>
-            <li class="delivery__guarantee"><a class="delyvery__link-item" href="#">Guarantee</a></li>
-            <li class="delivery__credit"><a class="delyvery__link-item" href="#">Credit</a></li>
+            <li class="delivery__guarantee"><a class="delivery__link-item" href="#">Guarantee</a></li>
+            <li class="delivery__credit"><a class="delivery__link-item" href="#">Credit</a></li>
         </ul>
-        <p class="paragraph__1">
+        <p class="delivery__paragraph-one">
             Some days i feel like i've been working on dlk my entire life and there are other days that
             i am completely shocked that four years have flown by. It's simply magical.</p>
-        <p class="paragraph__2">What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy
+        <p class="delivery__paragraph-two">What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy
             place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-      <button class="button__learn">Learn more</button>
+            @@include('blocks/button.html',{
+                'button': "LEARN MORE",
+                'class' : "delivery__button"
+               })
     </section>
-    <section class="Companies">
+    <section class="companies ">
     <div>
-    <ul class="Companies">
-        <li class="Companies__list-item"><img src="./img/mail.ru.svg" alt="#"></li>
-        <li  classs="Companies__list-item"><img src="./img/apple.png" alt=""></li>
-        <li class="Companies__list-item"><img src="./img/eltex.svg" alt="#"></li>
-        <li class="Companies__list-item"><img src="./img/owox.svg" alt="#"></li>   
-</ul>
-</div>
-  </section>
-    <section class="About contiener">
-        <h4 class="About__title">Design life kids</h4>
-        <p class="About_US">About Us</p>
-        <p class="About__paragrath">Some days i feel like i've been working on dlk my entire life and there are other days that
-            i am completely shocked that four years have flown by. It's simply magical. </p>
-        <button class="button__about">BUY NOW</button>
+    <ul class="companies">
+        <li class="companies__list-item"><img src="../img/mail.ru.svg" alt="#"></li>
+        <li  classs="companies__list-item"><img src="../img/apple.png" alt=""></li>
+        <li class="companies__list-item"><img src="../img/eltex.svg" alt="#"></li>
+        <li class="companies__list-item"><img src="../img/owox.svg" alt="#"></li>   
+    </ul>
+    </div>
     </section>
-    <section class="contacts contiener">
-        <h5 class="title__contacts">Contacts</h5>
+    <section class="design container">
+    <div class="about">
+        @@include('blocks/title.html',{
+            'title' : "Design Life Kids"
+          })
+        <p class="about__text">About Us</p>
+        <p class="about__paragrath">Some days i feel like i've been working on dlk my entire life and there are other days that
+            i am completely shocked that four years have flown by. It's simply magical. </p>
+            @@include('blocks/button.html',{
+                'button': "buy now",
+                'class' :"about__button"
+               })
+        
+    </div>
+    <div class="contacts">
+        @@include('blocks/title.html',{
+            'title' : "Contacts"
+          })
         <p class="contacts__paragraph">Some days i feel like i've been working on dlk my entire life and there are other days that
             i am completely shocked that four years have flown by. It's simply magical.</p>
-        <section class="maps container">
+        <div class="contacts__maps container">
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d36863.68674763687!2d49.35747365235615!3d53.53112473998576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879881341fde9%3A0x6da2c46a4c108d92!2z0KLQoNCaINCg0YPRgdGMINC90LAg0JLQvtC70LPQtQ!5e0!3m2!1sru!2sru!4v1675612668744!5m2!1sru!2sru"
                 width="480" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+        </div>
+        </div>
     </section>
+    
     </main>
     <div class="popup">
     <form action="#" class="form">
@@ -154,12 +164,14 @@
     </form> 
     <button type="button" class="close">X</button>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
     <footer class="footer">
-        <ul class="footer__list">
-         <li class="Navigation__list"><p>Navigation</p></li>
+        
+         <ul class="Navigation__list"><p>Navigation</p><a href="#">About Us</a><a href="#">Blog</a><a href="#">Design Services</a><a href="#">Featured On</a><a href="#">2018 Holiday Catalog</a><a href="#">Shop By Designer</a></ul>
          <li class="Customer__list"><p>Customer Information</p></li>
          <li class="Connect__list"><p>Connect</p></li>
+        
+
         </ul>
     </footer>
 </body>
