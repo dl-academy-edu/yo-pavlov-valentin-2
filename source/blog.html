@@ -27,14 +27,17 @@
 </head>
 <body>
         @@include('blocks/header.html')
+        <audio autoplay>
+            <source    src="./img/music.mp3"   type="audio/mpeg"  >
+          </audio>
         <main class="blog">
             <section class="blog__nav">
                 <h2 class="blog__nav-title">Blog</h2>
-            <ul class="home__list">
+            <div class="home__list">
                 <p class="blog__home">home</p>
                 <img class="blog__nav-img" src="../img/vectore-home.png" alt="#">
                 <p class="blog__title">blog</p>
-            </ul>
+            </div>
             </section>
             <section>
                 <ul class="blog__list">
@@ -47,16 +50,20 @@
                 </ul>                                                                                                                                                                                                                                                                                             
             </section>
             <section class="pages">
-                <ul class="pages">
+                <div class="pages__list">
                     <button class="vector__left-page"><img class="vector__left-page" src="../img/vectore-left.png" alt="left"></button>
-                    <button class="page__active" >1</button>
-                    <button class="page" >2</button>
-                    <button class="page" >3</button>
-                    <button class="page" >4</button>
+                    <div class="page__numbers">
+                        <button class="page__active page" >1</button>
+                        <button class="page" >2</button>
+                        <button class="page" >3</button>
+                        <button class="page" >4</button>
+                </div>
                     <button class="vector__right-page"><img class="vector__right-page" src="../img/vector-right.png" alt="right"></button>
-                </ul>
-                    <script src="js/app.js" defer></script>
+                </div>
             </section>
+            @@include('blocks/footer.html')
         </main> 
+        <script src="js/app.js" defer></script>
+        <script src="/js/menu.js"></script>
 </body>
 </html>

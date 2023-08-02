@@ -25,15 +25,18 @@
     </head>
 </head>
     @@include('blocks/header.html')
+    <audio autoplay>
+        <source    src="./img/music.mp3"   type="audio/mpeg"  >
+      </audio>
     <body>
         <main class="catalog">
             <section class="catalog__nav">
                  <h2 class="catalog__nav-title">CATEOGRY PRODUCTS</h2>
-                 <ul class="catalog__list">
-                  <p class="catalog__home">home</p>
-                  <img class="catalog__nav-img" src="../img/vectore-home.png" alt="#">
-                  <p class="catalog__title">catalog</p>
-                  </ul>
+                 <div class="catalog__list">
+                    <p class="catalog__home">home</p>
+                    <img class="catalog__nav-img" src="../img/vectore-home.png" alt="#">
+                    <p class="catalog__title">catalog</p>
+                 </div>
             </section>
             <section class="category container">
                 <ul class="category__list-first">
@@ -66,7 +69,9 @@
                 <p class="catalog__paragrath">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
                 <p class="catalog__paragrath">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
             </section>
+            @@include('blocks/footer.html')
         </main>
     <script src="js/app.js" defer></script>
+    <script src="/js/menu.js"></script>
 </body>
 </html>
