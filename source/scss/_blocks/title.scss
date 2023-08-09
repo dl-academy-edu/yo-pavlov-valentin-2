@@ -1,0 +1,14 @@
+.title {
+   // @include mont
+   font-style: normal;
+   font-weight: 700;
+   font-size: 38px;
+   line-height: 46px;
+   text-transform: uppercase;
+   @media screen and (max-width: 768px) {
+      font-size: 36px;
+   }
+   @media screen and (max-width: 375px) {
+      font-size: 24px;
+   }
+}

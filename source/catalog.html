@@ -19,65 +19,64 @@
         <!-- Favicon -->
     
         <!-- build:css -->
-        <link href="./css/catalog.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/common.css">
+        <link href="css/style.min.css" rel="stylesheet">
+        
         <!-- endbuild -->
     </head>
 </head>
-<body>
+    @@include('blocks/header.html')
+    <audio autoplay>
+        <source    src="./img/music.mp3"   type="audio/mpeg"  >
+      </audio>
     <body>
-        <header class="header contiener">
-            <img class="img_icon" src="./img/DLK.svg" alt="">
-            <ul class="header__list">
-                <li class="header__list-item"><a class="header__list-link" href="#">BLOG</a></li>
-                <li class="header__list-item"><a class="header__list-link" href="#">CATALOG</a></li>
-                <li class="header__list-item"><a class="header__list-link" href="#">ABOUT US</a></li>
-            </ul>
-            <img class="search-icon" src="search_icon.png" alt="">
-            <ul>
-                <li class="header__list-item-contact"><a class="header__list-link" href="#">CONTACT US</a></li>
-            </ul>
-        </header>
         <main class="catalog">
-            <section class="Catalog__nav">
-                 <h2 class="Catalog__nav-title">CATEOGRY PRODUCTS</h2>
-                 <ul class="Catalog__list">
-                    <p class="home">Home</p>
-                    <img src="./img/vectore-home.png" alt="home" class="blog__nav-img">
-                    <p class="Products__catalog">Catalog</p>
-                 </ul>
+            <section class="catalog__nav container">
+                 <h2 class="catalog__nav-title">CATEOGRY PRODUCTS</h2>
+                 <div class="catalog__list">
+                    <p class="catalog__home">home</p>
+                    <img class="catalog__nav-img" src="../img/vectore-home.png" alt="#">
+                    <p class="catalog__title">catalog</p>
+                 </div>
             </section>
-            <section class="Category container">
-                <ul class="Category__list">
-                    <li class="products__list-one">
-                        <img src="./img/sweeter.png" alt="Products">
-                        <p class="products__list-title-one">Apparel kids</p>
+            <section class="category container">
+                <div class="category__list-first">
+                    <li class="category__list-one">
+                        <img src="../img/sweeter.png" class="category__list-item" alt="Products">
+                        <p class="category__list-title--one">Apparel kids</p>
                     </li>
-                    <li class="products__list-two"> <img src="./img/sock.png" alt="Products">
-                        <p class="products__list-title-two">Holiday shop</p>
+                    <li class="category__list-two">
+                        <img src="../img/sock.png" alt="Products">
+                        <p class="category__list-title--two">Holiday shop</p>
                     </li>
-                    <li class="products__list-three"> <img src="./img/horse.png" alt="Products">
-                        <p class="products__list-title-three">Toys</p>
+                    <li class="category__list-three">
+                        <img src="../img/horse.png" alt="Products">
+                        <p class="category__list-title--three">Toys</p>
                     </li>
-                    <li class="products__list-four"> <img src="./img/men on skate.png" alt="Products">
-                        <p class="products__list-title-four">ACCESSORIES</p>
+                </div>
+                <div class="category__list-second">
+                    <li class="category__list-four">
+                        <img src="../img/men on skate.png" alt="Products">
+                        <p class="category__list-title--four">ACCESSORIES</p>
                     </li>
-                    <li class="products__list-five"> <img src="./img/flamingo.png" alt="Products">
-                        <p class="products__list-title-five">SALE</p> 
+                    <li class="category__list-five">
+                        <img src="../img/flamingo.png" alt="Products">
+                        <p class="category__list-title--five">SALE</p> 
                     </li>
-                    <li class="products__list-six"> <img src="./img/dress.png" alt="Products">
-                        <p class="products__list-title-six">APPAREL ADULTS</p>
+                    <li class="category__list-six">
+                        <img src="../img/dress.png" alt="Products">
+                        <p class="category__list-title--six">APPAREL ADULTS</p>
                     </li>
-                </ul>
+                </div>
             </section>
-            <section  class="Product__articles">
-                <h3 class="product__title">Product Description</h3>
-                <p class="paragrath_list-one">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
-                <p class="paragrath_list-two">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
-                <p class="paragrath_list-three">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
-            </section>
+            <div  class="catalog__articles container">
+                <h3 class="catalog__product-title">Product Description</h3>
+                <p class="catalog__paragrath">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+                <p class="catalog__paragrath">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+                <p class="catalog__paragrath">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+            </div>
+            @@include('blocks/footer.html')
         </main>
-    </body>
     <script src="js/app.js" defer></script>
+    <script src="/js/menu.js"></script>
 </body>
 </html>

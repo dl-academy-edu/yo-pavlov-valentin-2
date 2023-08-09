@@ -1,70 +1,167 @@
-li {
-    list-style-type: none;
+
+ .header {
+    display: flex;
+    margin-top: 50px;
+    &__icon {
+        animation: logo;
+        display: flex;
+        :hover {
+            opacity: 0.5;
+        }
+        @media  screen and (max-width: 768px) {
+             display: none;
+        }
+    }
+    &__list {
+        display: flex;
+        margin-right: auto;
+        column-gap: 20px;
+        color: #1E0606;
+ 
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        animation: logo 3s;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+        :hover {
+            opacity: 0.5;
+        }
+        &-link {
+            color: #1E0606;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        &--item {
+            color: #1E0606;
+        }
+        }
+
+        &-item--contact {
+            font-style: normal;
+            line-height: 19px;
+            font-weight: 700;
+            font-size: 14px;
+            color: #1E0606;
+            margin-left: 500px;
+            column-gap: 20px;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
 }
 
-a {
-    text-decoration: none;
-}
-.container {
-    max-width: 1178;
-    margin: 0 auto;
-}
-
-.header{
-    display: flex;
-}
-
-.header_list {
-    display: flex;
-    margin-right: auto;
-}
-   
-.header__list-item-contact{
-    display: flex;
+.menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 768px;
+    height: 339px;
+    transform: translateY(100px);
+    transition: 4s;
+    background: #FFFFFF;
+    @media screen and (max-width: 375px) {
+       width: 375px;
+    }
+    // &__modal {
+        //  color: rgba(125, 151, 218, 0.80);
+        //  width: 768px;
+        //  height: 700px;
+    // }
+    &__list-link {
+        color: var(--black, #1E0606);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        &--item {
+            color: var(--black, #1E0606);
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+    &__open {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
     
 }
-
-.header{
-height: 52px;
-width: 1178px;
-left: 112px;
-top: 50px;
-display: flex;
-align-items: center;
-margin-right: auto;
+.close__menu {
+    background: url(../img/menu_close_img.png);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -5%;
 }
-.header__list {
-    display: flex;
-    margin-right: auto;
-    column-gap: 20px;
-    color: #1E0606;
-    font-family: 'Open Sans';
+
+
+
+.btn-hid {
+    background-color: #FFFFFF;
+    width: 60px;
+    height: 70px;
+    position: absolute;
+    left: 49%;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: left;
-    margin-left: 20px;
-    height:21px;
-
-}
-.header__list-item-contact {
-font-family: 'Open Sans';
-font-style: normal;
-line-height: 19px;
-font-weight: 700;
-font-size: 14px;
-color: #1E0606;
-height: 23px;
-width: 92px;
+    line-height: normal;
+    text-transform: uppercase;
+    @media  screen and (min-width: 769px) {
+        display: none;
+    }
 }
 
-.img_icon {
-    height: 51px;
-width: 100px;
-margin-left: 40px;
+.header__list-tablet {
+    max-width: 768px;
+    width: 648px;
+    height: 102px;
+    display: flex;
+    justify-content: space-between;
+    @media  screen and (min-width: 769px) {
+        display: none;
+    }
 }
 
-.header__list-link{
-color: #1E0606;
+.header__list-mobile {
+    min-width: 315px;
+    height: 102px;
+    display: flex;
+    justify-content: space-between;
+    @media  screen and (min-width: 769px) {
+        display: none;
+    }
+}
+
+.search__item {
+    width: 17px;
+    height: 17px;
+    margin-left: 480px;
+    @media  screen and (max-width: 769px) {
+        display: none;
+    }
+}
+
+.search__item-tablet {
+    width: 17px;
+    height: 17px;
+    @media  screen and (min-width: 769px) {
+        display: none;
+    }
 }

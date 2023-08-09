@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="google" content="notranslate">
+        <meta name="format-detection" content="telephone=no">
+    
+        <title>DL Academy</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+    
+        <script>
+          var docElement = document.documentElement;
+          docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+        </script>
+    
+        <!-- Favicon -->
+    
+        <!-- build:css -->
+        <link href="css/style.min.css" rel="stylesheet">
+        
+        <!-- endbuild -->
+</head>
+<audio autoplay>
+    <source    src="./img/music.mp3"   type="audio/mpeg"  >
+  </audio>
+<body>
+    @@include('blocks/header.html')
+    <main class="animation">
+        <section class="animation__nav container">
+            <h2 class="animation__nav-title">Animation scene</h2>
+            <div class="animation__nav-list">
+                <p class="animation__home">home</p>
+                <img class="animation__nav-img" src="../img/vectore-home.png" alt="#">
+                <p class="animation__title">Animation</p>
+            </div>
+       </section>
+       <section>
+            <ul class="animation__list">
+                <li><img class="animation__list-item" src="../img/Clouds and sun.png" alt="#"></li>
+                <li class="animation__list-item"><img class="animation__town" src="../img/town.png" alt="#"></li>
+                <li><img class="animation__list-road--first" src="../img/road.png" alt="#"></li>
+                <li><img class="animation__list-road--second" src="../img/road.png" alt="#"></li>
+                <li><img class="animation__list-item" src="../img/stones.png" alt="#"></li>
+            <div class="animation__cars">
+                <div><img class="animation__list-car--first" src="../img/Car one.png" alt="#"></div>
+                <div><img class="animation__list-car--second" src="../img/Car two.png" alt="#"></div>
+                <div><img class="animation__list-car--third" src="../img/Car three.png" alt="#"></div>
+                <div><img class="animation__list-car--fourth" src="../img/Car four.png" alt="#"></div>
+            </div>
+                <li><img class="animation__list-lantern" src="../img/Lantern.png" alt="#"></li>
+                <div class="animation__taxi"><img class="animation__list-taxi" src="../img/taxi.png" alt="#"><p class="animation__message-taxi">Я вообще-то не за вами!</p></div>
+                <li><img class="animation__list-lantern--first" src="../img/Lantern third.png" alt="#"></li>
+            <div class="animation__people">
+                <li><img class="animation__list-woman" src="../img/woman animation.png" alt="#"></li>
+                <li class="animation__woman"><img class="animation__list-woman--suitcase" src="../img/woman suitcases.png" alt="#"><p class="woman__text animation__message-woman">Джеси, смотри, такси едет!</p></li>
+                <li class="animation__man"></li><img class="animation__list-man" src="../img/man.png" alt="#"> <p class="men__text-first animation__message-man--first chat">Эй, такси, такси!</p><p class=" animation__message-man--second">Ок, ждём ещё!</p></li>
+            </div>
+                <li><img class="animation__list-lantern--second" src="../img/Lantern.png" alt="#"></li>
+            </ul>
+       </section>
+       
+       @@include('blocks/footer.html')
+    </main>
+    <script src="/js/menu.js"></script>
+</body>
+</html>

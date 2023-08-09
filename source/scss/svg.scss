@@ -1,0 +1,78 @@
+.svg {
+    &__list {
+      display: flex;
+      column-gap: 20px;
+    }
+    &__landscapes {
+      width: 209px;
+      height: 324px;
+      background: #E6E9ED;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around
+    }
+    &__home {
+      font-family: 'Crimson Text';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      color: #1E0606;
+    }
+
+    &__title {
+      font-family: 'Crimson Text';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      color: #1E0606;
+      opacity: 0.5;
+    }
+
+    &__nav-img {
+      width: 8px;
+      height: 12px;
+      margin-top: 29px;
+    }
+
+    &__nav-title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 49px;
+      text-transform: uppercase;
+      color: #1E0606;
+    }
+
+    &__lines {
+      width: 187px;
+      background: #656D78;
+      height: 324px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+
+    &__height-rect {
+      width: 21px;
+      height: 324px;
+      background: #545C66;
+    }
+
+    &__rect {
+      display: flex;
+      margin-top: -18px;
+    }
+
+    &__landscape-first {
+      margin-left: -40px;
+    }
+
+    &__landscapes-second {
+      margin-left: -20px;
+    }
+
+  }
+
+    

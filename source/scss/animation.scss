@@ -1,0 +1,335 @@
+.animation {
+  max-width: 1600px;
+  margin-left: -40px;
+  overflow: hidden;
+    &__taxi {
+      animation: taxi 25s ease-in-out infinite;  
+      position: absolute;
+      left: 1313px;
+      top: 80%;
+    }
+    &__people {
+      position: absolute;
+      top: 97%;
+    }
+    &__message-taxi {
+      width: 160px;
+      height: 99px;
+      background: #FFFFFF;
+      left: 35%;
+      position: absolute;
+      top: -37%;
+      padding: 19px 19px 38px 19px;
+      animation: taxi__message 20s ease-in infinite;
+      background: url(../img/taxi_message-img.png);
+    }
+    &__message-woman {
+      background: #FFFFFF;
+      width: 160px;
+      height: 99px; 
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      animation: woman__message 6s ease-in forwards;
+      position: absolute;
+      top: -25%;
+      left: 55%;
+      padding: 19px 19px 38px 19px;
+      background: url(../img/woman_message-img.png);
+    }
+
+    &__message-man--second {
+      width: 160px;
+      height: 77px;
+      background: #FFFFFF;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      animation: man__message2 40s forwards;
+      position: absolute;
+      top: -35%;
+      left: 110%;
+      padding: 19px 19px 38px 19px;
+      background: url(../img/man_message.png);
+    }
+    @keyframes man__message2 {
+      0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
+    &__message-man--first {
+        width: 160px;
+        height: 77px;
+        background: #FFFFFF;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        animation: man_messege1 7s ease-in-out forwards;
+        opacity: 0;
+        position: absolute;
+        top: -35%;
+        left: 125%;
+        padding: 19px 19px 38px 19px;
+        background: url(../img/man_message.png);
+    }
+    @keyframes man_messege1 {
+      0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+  }
+  .animation__nav-list {
+        display: flex;
+        column-gap: 20px;
+    }
+
+  .animation__home {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      color: #1E0606;
+  }
+
+  .animation__nav {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      color: #1E0606;
+  }
+
+  .animation__nav-img {
+    width: 8px;
+    height: 12px;
+    margin-top: 29px;
+  }
+
+      .animation__nav-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        text-transform: uppercase;
+        color: #1E0606;
+      }
+      }
+  .animation__title {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+    opacity: 0.5;
+}
+
+.animation__list-road--first {
+  margin-top: 20px;
+}
+.animation__list-lantern--second {
+  position: absolute;
+  top: 50%;
+  left: 79%;
+}
+
+.animation__list-road--second {
+  margin-top: 55px;
+  }
+ .animation__cars {
+  display: flex;
+  position: absolute;
+  top: 80%; 
+  animation: trafic 27s infinite;
+}
+
+ .animation__list-lantern {
+  margin-top: -440px;
+  margin-left: 546px;
+  position: absolute;
+ }
+
+ @keyframes taxi {
+  0% {
+      opacity: 0;
+  }
+  10% {
+      opacity: 1;
+  }
+  50% {
+      transform: translate(-700px);
+  }
+  60% {
+      transform: translate(-700px);
+  }
+  100% {
+      transform: translate(-2300px);
+  }
+}
+
+
+ .animation__list-woman--suitcase {
+  margin-left: 250px;
+  margin-top: 50px;
+  position: absolute;
+ }
+
+ .animation__list-woman {
+  margin-top: -122px;
+  margin-left: 265px;
+  position: absolute;
+ }
+
+ .animation__list-lantern--first {
+  margin-top: -578px;
+  margin-left: 1130px;
+  position: absolute;
+ }
+
+ .animation__list-car--first {
+  left: 2%;
+  position: absolute;
+  top: 90%;
+  animation: car_one 25s linear infinite;
+ }
+ @keyframes car_one {
+  0% {
+      transform: translateX(-2000px);
+  }
+  100% {
+      transform: translateX(1600px);
+  }
+}
+
+ .animation__list-car--second {
+  left: 30%;
+  position: absolute;
+  top: 87%;
+  animation: car_two 23s linear infinite;
+ }
+ @keyframes car_two {
+  0% {
+      transform: translateX(-1300px);
+  }
+  100% {
+      transform: translateX(1600px);
+  }
+}
+
+
+ .animation__list-car--third {
+  left: 49%;
+  position: absolute;
+  top: 91%;
+  animation: car_three 22s linear infinite;
+ }
+ @keyframes car_three {
+  0% {
+      transform: translateX(-700px);
+  }
+  100% {
+      transform: translateX(1600px);
+  }
+}
+
+
+.animation__list-car--fourth {
+  left: 82%;
+  position: absolute;
+  top: 88%;
+  animation: car_four 20s linear infinite;
+}
+@keyframes car_four {
+  0% {
+      transform: translateX(-200px);
+  }
+  100% {
+      transform: translateX(1600px);
+  }
+}
+
+.animation__list-man {
+  margin-top: -1057px;
+  margin-left: 375px;
+  position: absolute;
+}
+
+
+
+  @keyframes taxi__message {
+    0% {
+        opacity: 0;
+    }
+
+     40% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    } 
+
+    80% {
+      opacity: 0;
+  } 
+
+    100% {
+        opacity: 0;
+    }
+  }
+
+
+.animation__man {
+  width: 214px;
+  height: 436px;
+}
+
+.animation__woman {
+  width: 271px;
+  height: 374px;
+}
+
+.animation__taxi {
+  width: 886px;
+  height: 320px;
+}
+
+@keyframes woman__message {
+  0% {
+    opacity: 0;
+}
+
+50% {
+    opacity: 1;
+}
+
+60% {
+  opacity: 1;
+}
+
+100% {
+    opacity: 0;
+}
+}
+
+
+  
+
+
+
+

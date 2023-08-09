@@ -18,74 +18,148 @@
     <!-- Favicon -->
 
     <!-- build:css -->
-    <link href="./css/toys.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/common.css">
+    <link href="css/style.min.css" rel="stylesheet">
     <!-- endbuild -->
 </head>
 
 <body>
     <body>
-        <header class="header contiener">
-            <img class="img_icon" src="./img/DLK.svg" alt="">
-            <ul class="header__list">
-                <li class="header__list-item"><a class="header__list-link" href="#">BLOG</a></li>
-                <li class="header__list-item"><a class="header__list-link" href="#">CATALOG</a></li>
-                <li class="header__list-item"><a class="header__list-link" href="#">ABOUT US</a></li>
-            </ul>
-            <img class="search-icon" src="search_icon.png" alt="">
-            <ul>
-                <li class="header__list-item-contact"><a class="header__list-link" href="#">CONTACT US</a></li>
-            </ul>
-        </header>
+        @@include('blocks/header.html')
+        <audio autoplay>
+            <source    src="./img/music.mp3"   type="audio/mpeg"  >
+          </audio>
         <main class="toys">
-            <section class="toys__nav">
+            <section class="toys__nav container">
                 <h2 class="toys__nav-title">Toy for kids</h2>
-                <ul class="home__list">
+                <div class="home__list">
                     <p class="home">Home</p>
-                    <img class="vector__img" src="./img/vectore-home.png" alt="">
-                    <p class="Products__catalog">Catalog</p>
-                    <img class="vector__img" src="./img/vectore-home.png" alt="">
+                    <img class="vector__img" src="../img/vectore-home.png" alt="#">
+                    <p class="products__catalog">Catalog</p>
+                    <img class="vector__img" src="../img/vectore-home.png" alt="#">
                     <p class="toys__products">Toys</p>
-                </ul>
+                </div>
             </section>
             <section class="filter">
-                <h3 class="cost">cost</h3><img class="ellipse__one" src="./img/Ellipse.png" alt=""><img class="ellipse__two" src="./img/Ellipse 2.png" alt=""><img class="rectangle__one" src="./img/Rectangle 1.png" alt=""><img class="rectangle__two" src="./img/Rectangle 1.png" alt="">
-                <h4 class="color">color</h4>
-                <li class="checkbox__color"><input type="checkbox"></li><p class="colors">black</p>
-                <li class="checkbox__color"><input type="checkbox"></li><p class="colors">blue</p>
-                <li class="checkbox__color"><input type="checkbox"></li><p class="colors">green</p>
-                <li class="checkbox__color"><input type="checkbox"></li><p class="colors">white</p>
-                <h5 class="delivery">delivery</h5>
-                <li class="checkbox__delivery"><input type="checkbox"></li>
-                <li class="checkbox__delivery"><input type="checkbox"></li>
+                <div class="filter__rage-group">
+                    <h3 class="filter__cost">cost</h3>
+                    <div>
+                        <input type="range" value="70" min="0" max="100" oninput="rangevalue.value=value"/>
+                    </div>
+                </div>
+                <!-- <div class="checkbox__color-list"> -->
+                <div class="filter__checkbox-color--list"> 
+                    <h4 class="color">color</h4>
+                    <div class="checkbox__color">
+                            <label class="label__checkbox">
+                                <input type="checkbox" class="toys__checkbox">
+                                <span class="custom__checkbox"></span>
+                                <p class="checkbox__color-text">Black</p>
+                            </label>
+                            <label class="label__checkbox">
+                                <input type="checkbox" class="toys__checkbox">
+                                <span class="custom__checkbox"></span>
+                                <p class="checkbox__color-text">Blue</p>
+                            </label>
+                            <label class="label__checkbox">
+                                <input type="checkbox" class="toys__checkbox">
+                                <span class="custom__checkbox"></span>
+                                <p class="checkbox__color-text">Green</p>
+                            </label>
+                            <label class="label__checkbox">
+                                <input type="checkbox" class="toys__checkbox">
+                                <span class="custom__checkbox"></span>
+                                <p class="checkbox__color-text">White</p>
+                            </label>
+                    </div>
+                </div>
+                <div class="filter__radio-shipping">
+                <h5>delivery</h5>
+                    <div class="filter__toys-radio">
+                       <label class="label__radio">
+                            <input type="radio" class="toys__radio-input">
+                            <span class="custom__radio"></span>
+                            <p>Free shipping</p>
+                        </label>
+                        <label class="label__radio" >
+                            <input type="radio" class="toys__radio-input">
+                            <span class="custom__radio"></span>
+                            <p>Fast shipping</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter__amount">
                 <h6 class="Amount">Amount</h6>
-            <ul class="button__amount">
-                <li class="button__amount-item"><button>0-5</button></li>
-                <li class="button__amount"><button>10-20</button></li>
-                <li class="button__amount"><button>20-50</button></li>
-            </ul>    
-                <li class="button__apply"><button>apply</button></li>
+                    <div class="filter__button-list">
+                        <button type="button" class="button__amount-item">0-5</button>
+                        <button type="button" class="button__amount">10-20</button>
+                        <button type="button" class="button__amount">20-50</button>
+                    </div>
+                </div>
+            @@include('blocks/button.html',{
+                'button': "apply",
+                'class' : "filter__button-apply" 
+               })
             </section>
-            <section  class="production">
-                <ul class="production">
-                    <li><img class="production__img" src="./img/shark.png" alt=""></li><p>SHARKY BEAN BAG CHAIR COVER</p><p>$60.00 USD</p>
-                    <li><img class="production__img" src="./img/brass.png" alt=""></li><p>BRASS DECO FRAMES</p><p>$66.00 USD</p>
-                    <li><img class="production__img" src="./img/dress-blog.png" alt=""></li><p>CIBO FULL APRON</p><p>$60.00 USD</p>
-                    <li><img class="production__img" src="./img/gatcha.png" alt=""></li><p>GATCHA GATCHA GUMBALL MACHINE</p><p>$56.00 USD</p>
-                    <li><img class="production__img" src="./img/candle.png" alt=""></li><p>CHRISTMAS ADVENT SCENTED CANDLE</p><p>$29.00 USD</p>
-                    <li><img class="production__img" src="./img/lamp.png" alt=""></li><p>TANGLE SPINNING TEA LIGHT</p><p>$56.00 USD</p>
-                </ul>
-            </section>
-            <section class="pages">
-                <button class="vector__left-page"><img src="./img/vectore-left.png" alt="left"></button>
-                <button class="page__active" >1</button>
-                <button class="page" >2</button>
-                <button class="page" >3</button>
-                <button class="page" >4</button>
-                <button class="vector__right-page"><img src="./img/vector-right.png" alt="right"></button>
-            </section>
+                <div class="production container">
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-one.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-one.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/shark.png" alt="#">
+                        </picture>                        
+                        <p class="toys__name">SHARKY BEAN BAG CHAIR COVER</p>
+                        <p class="cost__production">$60.00 USD</p>
+                    </ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-two.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-two.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/brass.png" alt="#">
+                        </picture>
+                        <p class="toys__name">BRASS DECO FRAMES</p>
+                        <p class="cost__production">$66.00 USD</p>
+                    </ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-three.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-three.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/dress-blog.png" alt="#">
+                        </picture>
+                        <p class="toys__name">CIBO FULL APRON</p>
+                        <p class="cost__production">$60.00 USD</p></ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-four.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-four.png" media="(max-width: 768px)"> 
+                            <img class="production__img" src="../img/gatcha.png" alt="#">
+                        </picture>
+                        <p class="toys__name">GATCHA GATCHA GUMBALL MACHINE</p>
+                        <p class="cost__production">$56.00 USD</p>
+                    </ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-five.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-five.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/candle.png" alt="#">
+                            </picture>
+                        <p class="toys__name">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                        <p class="cost__production">$29.00 USD</p>
+                    </ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-six.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-six.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/lamp.png" alt="#">
+                        </picture>
+                        <p class="toys__name">TANGLE SPINNING TEA LIGHT</p>
+                        <p class="cost__production">$56.00 USD</p>
+                    </ul>
+                </div>
+            @@include('blocks/pages.html')
+            @@include('blocks/footer.html')
         </main>
     </body>
     <script src="js/app.js" defer></script>
+    <script src="/js/menu.js"></script>
 </body>
 </html>

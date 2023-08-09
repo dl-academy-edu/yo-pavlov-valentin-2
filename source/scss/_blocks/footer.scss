@@ -1,10 +1,322 @@
-/*
-  Код ниже нужно удалить, он добавлен просто для примера
-*/
 .footer {
-  background-color: #151515;
-  color: #fff;
-  padding: 40px 0;
+  display: flex;
+  background: #434343;
+  height: 555px;
+  max-width: 1400px;
+  column-gap: 20px;
+  @media screen and (max-width: 768px) {
+    width: 768px;
+    height: 564px;
+  }
+  @media screen and (max-width: 375px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 375px;
+    height: 884px;
+    // margin-top: auto;
+  }
+  &__icon {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    margin-top: 25px;
+    :hover {
+      opacity: 0.2;
+    }
+  }
+  &__input-email {
+    height: 40px;
+    width: 380px;
+    background: #666666;
+    margin-top: 24px;
+    color: #FFFFFF;
+    @media  screen and (max-width: 768px) {
+     width: 202px;
+    }
+    @media  screen and (max-width: 375px) {
+      width: 335px;
+     }
+  }
+  &__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 22px;
+  gap: 10px;
+  width: 81px;
+  height: 40px;
+  background: #000000;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
   text-align: center;
-  height: 100px;
+  text-transform: uppercase;
+  margin-top: 24px;
+  position: absolute;
+  margin-left: 300px;
+  @media  screen and (max-width: 768px) {
+    margin-left: 123px;
+  }
+  @media  screen and (max-width: 375px) {
+    margin-left: 255px;
+  }
+  }
+  &__navigator-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 160px;
+  }
+  &__navigation-list {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    height: 281px;
+    margin-left: 110px;
+    margin-top: 56px;
+    :hover {
+      opacity: 0.2;
+    }
+    @media  screen and (max-width: 768px) {
+      margin-left: 40px;
+      margin-top: 55px;
+    }
+    @media  screen and (max-width: 375px) {
+      height: 153px;
+      margin-left: auto;
+    }
+  }
+  &__customer-list {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    height: 281px;
+    margin-top: 55px;
+    margin-left: -265px;
+    :hover {
+      opacity: 0.2;
+    }
+    @media screen and (max-width: 375px) {
+      height: 153px;
+    }
+  }
+  &__customer-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 140px;
+  }
+  &__connect-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #AAAAAA;
+    margin-top: -4px;
+    :hover {
+      opacity: 0.2;
+    }
+  }
+  &__connect-list {
+    margin-left: -26px;
+    margin-top: 66px;
+  }
+  
+}
+
+
+
+.navigation__line {
+  border-bottom: 1px solid #666666;
+  width: 380px;
+  margin-top: 8px;
+  @media  screen and (max-width: 768px) {
+    width: 203px;
+    border-bottom: 1px solid #666666;
+    margin-top: -10px;
+  }
+  @media screen and (max-width: 375px) {
+    width: 335px;
+  }
+}
+
+
+
+
+.customer__line {
+  border-bottom: 1px solid #666666;
+  width: 380px;
+  margin-top: 4px;
+  @media  screen and (max-width: 768px) {
+    width: 203px;
+    border-bottom: 1px solid #666666;
+    margin-top: -15px;
+  }
+  @media screen and (max-width: 375px) {
+    width: 335px;
+  }
+}
+
+
+
+
+
+.connect__line {
+  border-bottom: 1px solid #666666;
+  width: 380px;
+  margin-top: 23px;
+  @media  screen and (max-width: 768px) {
+    width: 203px;
+    border-bottom: 1px solid #666666;
+    margin-top: -13px;
+  }
+  @media screen and (max-width: 375px) {
+    width: 335px;
+  }
+}
+
+
+
+.end__line {
+  border-bottom: 1px solid #666666;
+  width: 1180px;
+  display: flex;
+  position: absolute;
+  margin-top: 410px;
+  margin-left: 110px;
+  @media  screen and (max-width: 768px) {
+    width: 648px;
+    margin-left: 40px;
+    margin-top: 385px;
+    border-bottom: 1px solid #666666;
+  }
+  @media screen and (max-width: 375px) {
+    width: 335px;
+    top: 542%;
+    left: -6%;
+  }
+}
+
+.conect {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+  color: #A2A2A2;
+}
+
+.rating__img {
+  height: 16px;
+  width: 17px;
+  :hover {
+    color: #C29974;
+  }
+}
+
+.navigator__list-rate {
+  display: flex;
+  gap: 20px 3px;
+  align-items: baseline;
+  position: relative;
+  width: 245px;
+  height: 25px;
+  top: 75%;
+  left: -29%;
+  :hover {
+    color: #C29974;
+  }
+  @media screen and (max-width: 375px) {
+    margin-top: -130px;
+    left: -2%;
+  }
+}
+
+.navigation__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #AAAAAA;
+  margin-top: 6px;
+}
+
+.navigator__rating {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.customer__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #AAAAAA;
+  margin-top: 10px;
+}
+
+.customer__rating {
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 435px;
+  margin-left: -410px;
+}
+
+.conect__rating  {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #A2A2A2;
+  margin-top: 205px;
+  margin-left: auto;
+  @media screen and (max-width: 375px) {
+     margin-top: 152px;
+     margin-left: auto;
+  }
+}
+
+.footer__navigator-list--link {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  height: 281px;
+  margin-left: -40px;
+  @media screen and (max-width: 375px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 335px;
+    height: 73px;
+    margin-left: -40px;
+    column-gap: 17px;
+  }
+}
+
+.footer__customer-list--link{
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  height: 281px;
+  margin-left: -40px;
+  @media screen and (max-width: 375px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 335px;
+    height: 73px;
+    margin-left: -40px;
+    column-gap: 39px;
+  }
 }

@@ -1,0 +1,22 @@
+.button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    flex-direction: row;
+    padding: 9px 22px;
+    background: #1E0606;
+    color: #FFFFFF;
+    &:hover {
+        background: #C29974;
+    }
+    &:active {
+        background: #CFAF91;
+    }
+    &:disabled {
+        background: #C7C1C1;
+    }
+}
