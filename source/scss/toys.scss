@@ -5,7 +5,6 @@
     line-height: 49px;
     text-transform: uppercase;
     color: #1E0606;
-    padding: 0px 110px;
 }
 
 .home__list{
@@ -41,11 +40,22 @@
     height: 254px;
     display: flex;
     justify-content: space-evenly;
+    margin: 0 auto;
     @media screen and (max-width: 768px) {
         width: 768px;
+        height: 323px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        column-gap: 65px;
     }
     @media screen and (max-width: 375px) {
         width: 375px;
+        height: 439px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        align-items: flex-start;
     }
     &__rage-group {
         display: flex;
@@ -54,12 +64,20 @@
     &__checkbox-color--list {
         display: flex;
         flex-direction: column;
+
         width: 75px;
         height: 170px;
+        @media screen and  (max-width: 375px) {
+            margin-top: 80px;
+            margin-left: -320px;
+        }
     }
     &__radio-shipping {
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 375px) {
+            margin-top: 85px;
+        }
     }
     &__toys-radio {
         display: flex;
@@ -68,6 +86,10 @@
     &__amount {
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 768px)  {
+            margin-left: -60px;
+            margin-top: -30px;
+        }
     }
     &__button-apply {
         display: flex;
@@ -84,6 +106,10 @@
         text-align: center;
         text-transform: uppercase;
         margin-top: 62px;
+        @media screen and (max-width: 768px)  {
+            margin-left: 40px;
+            margin-top: -15px;
+        }
     }
     &__button-list {
         display: flex;
@@ -115,22 +141,34 @@
     text-align: left;
 }
 
-.production{
+.production {
     display: flex;
-    max-width: 1080px;
     max-height: 1090px;
     flex-wrap: wrap;
     flex-direction: column;
     column-gap: 20px;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;
     }
-//  .product__list-item {
-    //  :hover {
-    //      width: 207px;
-    //      height: 207px;   
-    //      opacity: 0.8999999761581421;
-    //     //  position: absolute;
-    //     // background: #E5EAF8;
-    //  }
+    @media screen and (max-width: 375px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        column-gap: 16px;
+    }
+}
+ .product__list-item {
+     @media screen and (max-width: 768px) {
+        width: 203px;
+        height: 288px;
+     }
+     @media screen and (max-width: 375px) {
+        width: 160px;
+    }
+}
   
 
    //@media screen and (max-width: 375px) {
@@ -149,7 +187,8 @@
     display: flex;
     flex-direction: column;
     column-gap: 10px;
-    display: flex;
+    height: 133px;
+    justify-content: space-between;
 }
 .label__checkbox{
     display: block;
@@ -241,12 +280,17 @@
     line-height: 19px;
     text-align: center;
     color: #1E0606;
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
 }
 
 .production__img{
     background: url(image.png);
     background-blend-mode: multiply;
-
+    @media screen and (max-width: 768px) {
+        margin-left: -20px;
+    }
 }
 
 .button__amount-item{
@@ -375,57 +419,4 @@
     border: none;
     background: transparent;
   }
-
-.page {
-    background: #ffffff;
-    column-gap: 64px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #1E0606;
-}
-
-.page__active{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #C29974;
-    background: #ffffff;
-  
-}
-
-.vector__left-page{
-    background: #ffffff;
-}
-
-.vector__right-page{
-    background: #ffffff;
-}
-
-.pages__list {
-    display: flex;
-    width: 1174px;
-    height: 26px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px 113px;
-    @media screen and (max-width: 768px) {
-        width: 768px;
-    }
-    @media screen and (max-width: 375px) {
-        width: 375px;
-    }
-}
-
-.page__numbers {
-    display: flex;
-    column-gap: 47px;
-} 
-
 

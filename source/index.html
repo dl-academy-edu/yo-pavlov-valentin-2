@@ -24,19 +24,21 @@
   </head>
   <body>
     @@include('blocks/header.html')
-   
     <audio autoplay>
         <source    src="./img/music.mp3"   type="audio/mpeg"  >
       </audio>
+      <main class="index__page">
     <div class="banner container">
-        <img class="banner__img" src="../img/monster.png" alt="#">
+        <picture>
+            <source srcset="../img/monster__mobile.jpg"
+                    media="(max-width: 375px)">
+            <source srcset="../img/monster__tablet.jpg" 
+                    media="(max-width: 768px)">
+            <img srcset="../img/monster.jpg" class="banner__img">
+        </picture>
         <div class="banner__list">
             <h1 class="banner__text"> THE OOH NOO COLLECTION</h1>
-             
-             <!-- <picture>
-                <source media="(max-width: 375px)" srcset="#">
-                <img src="../img/monster_2x.png" alt="#">
-             </picture> -->
+       
              <p class="banner__country">Designed in Slovenia</p>
             @@include('blocks/button.html',{
                 'button': "Explore now",
@@ -52,12 +54,12 @@
             <button type="button" class="switch__rectangel-three"></button>
         </div>
     </div>
-    <section class="categoryes">
+    <div class="categoryes ">
       @@include('blocks/title.html',{
         'title' : "category products",
         'class' : "categoryes__title"
       })
-        <ul class="categoryes__list">
+        <ul class="categoryes__list container">
             <li class="categoryes__list-one">
                 <img src="../img/sweeter.png" alt="Products">
                 <p class="categoryes__list-title-one">Apparel kids</p>
@@ -72,16 +74,20 @@
                 <p class="categoryes__list-title-four">ACCESSORIES</p>
             </li>
         </ul>
+    </div>
+    <section class="switch switch__category container">
+        <button type="button" class="switch__button" ><img src="./img/vector left.png" alt="switch"></button>
+        <button type="button" class="switch__button" ><img src="./img/vector right.png" alt="switch"></button>
+        <p class="switch__category-item">Modern finds for the modern home. Curated goods by unique designers around the world from fashion tofurniture for kids and adults.</p>
     </section>
-    <section class="switch">
-        <ul  class="switch__category">
-            <li class="img_switch"><button type="button" class="switch__button" ><img src="./img/vector left.png" alt="switch"></button></li>
-            <li class="img_switch"><button type="button" class="switch__button" ><img src="./img/vector right.png" alt="switch"></button></li>
-            <li class="switch__category-item">Modern finds for the modern home. Curated goods by unique designers around the world from fashion tofurniture for kids and adults.</li>
-        </ul>
-    </section>
-    <section class="delivery">
-            <img class="delivery__img" src="../img/woman.jpg" alt="#">
+    <section class="delivery container">
+        <picture>
+            <source srcset="./img/delivery__mobile.jpg, ./img/delivery__mobile-2x.jpg 2x"
+                    media="(max-width: 375px)">
+            <source srcset="./img/delivery__tablet.jpg, ./img/delivery__tablet-2x.jpg 2x" 
+                    media="(max-width: 768px)">
+            <img    srcset="./img/delivery.jpg, ./img/delivery-2x.jpg 2x">
+        </picture>
         <div class="delivery__text">
             @@include('blocks/title.html',{
                 'title' : "Delivery"
@@ -100,16 +106,30 @@
                    })
         </div>
     </section>
-    <section class="companies">
-        <ul class="companies">
-            <li class="companies__list-item"><img src="../img/mail.ru.svg" alt="#"></li>
-            <li  classs="companies__list-item"><img src="../img/apple.png" alt=""></li>
-            <li class="companies__list-item"><img src="../img/eltex.svg" alt="#"></li>
-            <li class="companies__list-item"><img src="../img/owox.svg" alt="#"></li>   
-        </ul>
+    <section class="companies container">
+            <picture>
+                <source srcset="" media="(max-width: 375px)">
+                <source srcset="./img/mail__tablet.png" media="(max-width: 768px)">
+                <img src="../img/mail.ru.svg" alt="#">
+            </picture>
+            <picture>
+                <source srcset="" media="(max-width: 375px)">
+                <source srcset="./img/apple__tablet.png" media="(max-width: 768px)">
+                <img src="../img/apple.png" alt="#">
+            </picture>
+            <picture>
+                <source srcset="" media="(max-width: 375px)">
+                <source srcset="./img/eltex__tablet.png" media="(max-width: 768px)">
+                <img src="../img/eltex.svg" alt="#">
+            </picture>
+            <picture>
+                <source srcset="" media="(max-width: 375px)">
+                <source srcset="./img/owox__tablet.png" media="(max-width: 768px)">
+                <img src="../img/owox.svg" alt="#"> 
+            </picture>
     </section>
-    <section class="design">
-        <ul class="about">
+    <section class="design container">
+        <div class="about">
             @@include('blocks/title.html',{
                 'title' : "Design Life Kids",
                 'class' : "about__title"
@@ -121,9 +141,8 @@
                     'button': "buy now",
                     'class' :"about__button"
                    })
-            
-        </ul>
-        <ul class="contacts">
+        </div>
+        <div class="contacts">
             @@include('blocks/title.html',{
                 'title' : "Contacts",
                 'class' : "contacts__title"
@@ -131,11 +150,11 @@
             <p class="contacts__paragraph">Some days i feel like i've been working on dlk my entire life and there are other days that
                 i am completely shocked that four years have flown by. It's simply magical.</p>
             <div class="contacts__maps">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A35e39447092747f9fb266da3eb4fbb5f540cf21a2001743162ab3da56344f43b&amp;source=constructor" 
-                width="480" height="200" frameborder="0"></iframe>
-
+                <iframe class="contacts__maps" width="100%" src="https://yandex.ru/map-widget/v1/?um=constructor%3A35e39447092747f9fb266da3eb4fbb5f540cf21a2001743162ab3da56344f43b&amp;source=constructor" 
+                width="480" height="200" frameborder="0">
+                </iframe>
             </div>
-        </ul>
+        </div>
     </section>
 </main>
     <div class="popup">
@@ -159,9 +178,13 @@
         <label for="message" class="form__label-message">Message</label>
         <input type="message" id="message" class="form__input-message">
     </div>
-       <ul>
-        <li class="agree__checkbox"><input type="checkbox"></li>
-       </ul>
+    <ul class="form__checkbox">
+        <label class="label__checkbox">
+            <input type="checkbox" for="By clicking on the button, you consent to the processing of your personal data" class="contact__checkbox">
+            <span class="custom__checkbox"></span>
+        </label>
+        <p>By clicking on the button, you consent to the processing of your personal data</p>
+    </ul> 
     <button type="submit" class="button__contact">SUBMIT</button>
     </form> 
     <button type="button" class="close">X</button>

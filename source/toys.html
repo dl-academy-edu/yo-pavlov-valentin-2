@@ -29,7 +29,7 @@
             <source    src="./img/music.mp3"   type="audio/mpeg"  >
           </audio>
         <main class="toys">
-            <section class="toys__nav">
+            <section class="toys__nav container">
                 <h2 class="toys__nav-title">Toy for kids</h2>
                 <div class="home__list">
                     <p class="home">Home</p>
@@ -100,28 +100,62 @@
                 'class' : "filter__button-apply" 
                })
             </section>
-            <section  class="production">
-                <div class="production">
-                    <ul class="product__list-item"><img class="production__img" src="../img/shark.png" alt="#"></ul><p class="toys__name">SHARKY BEAN BAG CHAIR COVER</p><p class="cost__production">$60.00 USD</p>
-                    <ul class="product__list-item"><img class="production__img" src="../img/brass.png" alt="#"><p class="toys__name">BRASS DECO FRAMES</p><p class="cost__production">$66.00 USD</p></ul>
-                    <ul class="product__list-item"><img class="production__img" src="../img/dress-blog.png" alt="#"></ul><p class="toys__name">CIBO FULL APRON</p><p class="cost__production">$60.00 USD</p>
-                    <ul class="product__list-item"><img class="production__img" src="../img/gatcha.png" alt="#"></ul><p class="toys__name">GATCHA GATCHA GUMBALL MACHINE</p><p class="cost__production">$56.00 USD</p>
-                    <ul class="product__list-item"><img class="production__img" src="../img/candle.png" alt="#"></ul><p class="toys__name">CHRISTMAS ADVENT SCENTED CANDLE</p><p class="cost__production">$29.00 USD</p>
-                    <ul class="product__list-item"><img class="production__img"  src="../img/lamp.png" alt="#"><p class="toys__name">TANGLE SPINNING TEA LIGHT</p><p class="cost__production">$56.00 USD</p></ul>
+                <div class="production container">
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-one.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-one.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/shark.png" alt="#">
+                        </picture>                        
+                        <p class="toys__name">SHARKY BEAN BAG CHAIR COVER</p>
+                        <p class="cost__production">$60.00 USD</p>
+                    </ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-two.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-two.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/brass.png" alt="#">
+                        </picture>
+                        <p class="toys__name">BRASS DECO FRAMES</p>
+                        <p class="cost__production">$66.00 USD</p>
+                    </ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-three.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-three.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/dress-blog.png" alt="#">
+                        </picture>
+                        <p class="toys__name">CIBO FULL APRON</p>
+                        <p class="cost__production">$60.00 USD</p></ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-four.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-four.png" media="(max-width: 768px)"> 
+                            <img class="production__img" src="../img/gatcha.png" alt="#">
+                        </picture>
+                        <p class="toys__name">GATCHA GATCHA GUMBALL MACHINE</p>
+                        <p class="cost__production">$56.00 USD</p>
+                    </ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-five.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-five.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/candle.png" alt="#">
+                            </picture>
+                        <p class="toys__name">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                        <p class="cost__production">$29.00 USD</p>
+                    </ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-six.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-six.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/lamp.png" alt="#">
+                        </picture>
+                        <p class="toys__name">TANGLE SPINNING TEA LIGHT</p>
+                        <p class="cost__production">$56.00 USD</p>
+                    </ul>
                 </div>
-            </section>
-            <section class="pages">
-                <div class="pages__list">
-                    <button class="vector__left-page"><img class="vector__left-page" src="../img/vectore-left.png" alt="left"></button>
-                    <div class="page__numbers">
-                        <button class="page__active page" >1</button>
-                        <button class="page" >2</button>
-                        <button class="page" >3</button>
-                        <button class="page" >4</button>
-                    </div>
-                    <button class="vector__right-page"><img class="vector__right-page" src="../img/vector-right.png" alt="right"></button>
-                </div>
-            </section>
+            @@include('blocks/pages.html')
             @@include('blocks/footer.html')
         </main>
     </body>

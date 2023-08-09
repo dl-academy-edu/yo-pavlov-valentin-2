@@ -30,7 +30,7 @@
       </audio>
     <body>
         <main class="catalog">
-            <section class="catalog__nav">
+            <section class="catalog__nav container">
                  <h2 class="catalog__nav-title">CATEOGRY PRODUCTS</h2>
                  <div class="catalog__list">
                     <p class="catalog__home">home</p>
@@ -39,36 +39,41 @@
                  </div>
             </section>
             <section class="category container">
-                <ul class="category__list-first">
+                <div class="category__list-first">
                     <li class="category__list-one">
-                        <img src="../img/sweeter.png" alt="Products">
+                        <img src="../img/sweeter.png" class="category__list-item" alt="Products">
                         <p class="category__list-title--one">Apparel kids</p>
                     </li>
-                    <li class="category__list-two"> <img src="../img/sock.png" alt="Products">
+                    <li class="category__list-two">
+                        <img src="../img/sock.png" alt="Products">
                         <p class="category__list-title--two">Holiday shop</p>
                     </li>
-                    <li class="category__list-three"> <img src="../img/horse.png" alt="Products">
+                    <li class="category__list-three">
+                        <img src="../img/horse.png" alt="Products">
                         <p class="category__list-title--three">Toys</p>
                     </li>
-                </ul>
-                <ul class="category__list-second">
-                    <li class="category__list-four"> <img src="../img/men on skate.png" alt="Products">
+                </div>
+                <div class="category__list-second">
+                    <li class="category__list-four">
+                        <img src="../img/men on skate.png" alt="Products">
                         <p class="category__list-title--four">ACCESSORIES</p>
                     </li>
-                    <li class="category__list-five"> <img src="../img/flamingo.png" alt="Products">
+                    <li class="category__list-five">
+                        <img src="../img/flamingo.png" alt="Products">
                         <p class="category__list-title--five">SALE</p> 
                     </li>
-                    <li class="category__list-six"> <img src="../img/dress.png" alt="Products">
+                    <li class="category__list-six">
+                        <img src="../img/dress.png" alt="Products">
                         <p class="category__list-title--six">APPAREL ADULTS</p>
                     </li>
-                </ul>
+                </div>
             </section>
-            <section  class="catalog__articles">
+            <div  class="catalog__articles container">
                 <h3 class="catalog__product-title">Product Description</h3>
                 <p class="catalog__paragrath">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
                 <p class="catalog__paragrath">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
                 <p class="catalog__paragrath">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
-            </section>
+            </div>
             @@include('blocks/footer.html')
         </main>
     <script src="js/app.js" defer></script>

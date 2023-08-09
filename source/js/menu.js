@@ -6,10 +6,8 @@ const backgroundMenu = document.querySelector('.menu__modal');
 
 menuBtn.addEventListener('click', () => {
     mobileMenu.classList.add('menu__open');
-    backgroundMenu.classList.add('menu__modal-open');
 });
 
 closeMenu.addEventListener('click', () => {
     mobileMenu.classList.remove('menu__open');
-    backgroundMenu.classList.remove('menu__modal-close');
 });

@@ -27,15 +27,15 @@
   <source    src="./img/music.mp3"   type="audio/mpeg"  >
 </audio>
 <body>
-    <main>
-      <section class="svg__nav">
+    <main class="container">
+      <section class="svg__nav container">
         <h2 class="svg__nav-title">SVG ANIMATION</h2>
         <div class="svg__list">
-         <p class="svg__home">Home</p>
-         <img class="svg__nav-img" src="../img/vectore-home.png" alt="#">
-         <p class="svg__title">SVG</p>
+          <p class="svg__home">Home</p>
+          <img class="svg__nav-img" src="../img/vectore-home.png" alt="#">
+          <p class="svg__title">SVG</p>
         </div>
-   </section>
+   </section> 
    <div class="svg">
     <svg  width="418" height="27" viewBox="0 0 418 27">
       <path d="M15 0H403C412.5 0 418 5.5 418 15V27H0V15C0 5.49988 5.5 0 15 0Z" fill="#CCD1D9"/>
@@ -51,32 +51,36 @@
       <svg width="144" height="14" viewBox="0 0 144 14">
         <path d="M7 6L137 7" stroke="#A0D468" stroke-width="14" stroke-linecap="round"/>
       </svg>
-      <svg width="42" height="14" viewBox="0 0 42 14">
-        <path d="M7 6H35" stroke="#ED5565" stroke-width="14" stroke-linecap="round"/>
-      </svg>
-      <svg width="88" height="14" viewBox="0 0 88 14">
-        <path d="M7 -0.00012207C3.13401 -0.00012207 0 3 0 7C0 10.8659 3.13401 13.9999 7 13.9999V-0.00012207ZM7 13.9999H88V-0.00012207H7V13.9999Z" fill="#ED5565"/>
-      </svg>
+      <div class="svg__lines-red">
+        <svg width="42" height="14" viewBox="0 0 42 14">
+          <path d="M7 6H35" stroke="#ED5565" stroke-width="14" stroke-linecap="round"/>
+        </svg>
+        <svg width="88" height="14" viewBox="0 0 88 14">
+          <path d="M7 -0.00012207C3.13401 -0.00012207 0 3 0 7C0 10.8659 3.13401 13.9999 7 13.9999V-0.00012207ZM7 13.9999H88V-0.00012207H7V13.9999Z" fill="#ED5565"/>
+        </svg>
+      </div>
       <svg width="129" height="14" viewBox="0 0 129 14">
         <path d="M7 -0.00012207C3.13401 -0.00012207 0 3 0 7C0 10.8659 3.13401 13.9999 7 13.9999V-0.00012207ZM7 13.9999H129V-0.00012207H7V13.9999Z" fill="#FFCE54"/>
       </svg>
       <svg width="90" height="14" viewBox="0 0 90 14">
         <path d="M7 6.99988H83" stroke="#CCD1D9" stroke-width="14" stroke-linecap="round"/>
       </svg>
+      <div>
       <svg width="36" height="14" viewBox="0 0 36 14">
         <path d="M7 6.99988H29" stroke="#CCD1D9" stroke-width="14" stroke-linecap="round"/>
       </svg>
       <svg width="82" height="14" viewBox="0 0 82 14">
         <path d="M7 -0.00012207C3.13401 -0.00012207 0 3.13388 0 7C0 10.8659 3.13401 13.9999 7 13.9999V-0.00012207ZM7 13.9999H82V-0.00012207H7V13.9999Z" fill="#CCD1D9"/>
       </svg>
+    </div>
       <svg width="129" height="14" viewBox="0 0 129 14">
         <path d="M7 -0.00012207C3.13401 -0.00012207 0 3.13388 0 6.99988C0 10.8659 3.13401 13.9999 7 13.9999V-0.00012207ZM7 13.9999H129V-0.00012207H7V13.9999Z" fill="#CCD1D9"/>
       </svg>
-      <svg width="129" height="14" viewBox="0 0 129 14">
-        <path d="M7 -0.00012207C3.13401 -0.00012207 0 3.13388 0 6.99988C0 10.8659 3.13401 13.9999 7 13.9999V-0.00012207ZM7 13.9999H129V-0.00012207H7V13.9999Z" fill="#CCD1D9"/>
+      <svg width="103" height="14" viewBox="0 0 103 14" fill="none">
+        <path d="M7 6.99988H96" stroke="#FFCE54" stroke-width="14" stroke-linecap="round"/>
       </svg>
-      <svg width="129" height="14" viewBox="0 0 129 14">
-        <path d="M7 -0.00012207C3.13401 -0.00012207 0 3.13388 0 6.99988C0 10.8659 3.13401 13.9999 7 13.9999V-0.00012207ZM7 13.9999H129V-0.00012207H7V13.9999Z" fill="#CCD1D9"/>
+      <svg width="76" height="14" viewBox="0 0 76 14" fill="none">
+        <path d="M7 6.99988H69" stroke="#ED5565" stroke-width="14" stroke-linecap="round"/>
       </svg>
       <svg width="110" height="14" viewBox="0 0 110 14">
         <path d="M7 6.99988L103 6.99989" stroke="#A0D468" stroke-width="14" stroke-linecap="round"/>
@@ -84,7 +88,7 @@
       <svg width="56" height="14" viewBox="0 0 56 14">
         <path d="M7 6.99988H49" stroke="#5D9CEC" stroke-width="14" stroke-linecap="round"/>
       </svg>
-     </ul>
+    </ul>
      <ul class="svg__landscapes">
       <svg width="189" height="122" viewBox="0 0 189 122" class="svg__landscape-first">
         <path d="M0 -0.00012207H182C185.866 -0.00012207 189 3.13388 189 6.99988V115C189 118.866 185.866 122 182 122H0V-0.00012207Z" fill="#5D9CEC"/>
@@ -103,7 +107,7 @@
       <svg width="96" height="14" viewBox="0 0 96 14" class="svg__landscapes-second">
         <path d="M7 6.99988H89" stroke="#CCD1D9" stroke-width="14" stroke-linecap="round"/>
       </svg>
-     </ul>
+    </ul>
     </div>
   </div>
     </main>

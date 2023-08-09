@@ -1,9 +1,13 @@
-<header class="header contaiener">
-    <a class="header__icon" href="./index.html"><img class="header__icon" src="../img/dlk.png" alt="#"></a> 
+<header class="header container">
+    <a class="header__icon" href="./index.html">
+        <img class="header__icon" srcset="../img/dlk.png" alt="#">
+    </a> 
     <div class="header__list-tablet header__list-mobile">
-        <a class="header__icon-tablet" href="./index.html"><img class="header__icon-tablet" src="./img/dlk.png" alt="#"></a> 
+        <picture>
+            <source media="(max-width: 375px)" srcset="./img/header__icon-mobile.png">
+            <a class="header__icon-tablet" href="./index.html"><img class="header__icon-tablet" srcset="./img/header__icon-tablet.png" alt="#"></a>
+        </picture>
         <button type="button" aria-label="Open modal window" class="btn-hid">menu</button>
-        <li class="menu__list-item"><button class="close__menu">X</button></li>
         <img class="search__item-tablet" src="./img/search.png" alt="#">
     </div>
         <ul class="header__list">
@@ -13,10 +17,11 @@
             <li class="header__list-item"><a class="header__list-link" href="./animation.html">ANIMATION</a></li>
             <li class="header__list-item"><a class="header__list-link" href="./svg.html">SVG</a></li>
             <li class="header__list-item"><a class="header__list-link" href="./grid.html">GRID</a></li>
-            <div class="header__list-item--contact"><img class="search__item" src="./img/search.png" alt="#"><a class="header__list-link--item" href="./contact.html">CONTACT US</a></div>
+            <img class="search__item" src="../img/search.png" alt="#"><a class="header__list-link--item" href="./contact.html">CONTACT US</a>
         </ul>
     <div class="menu__modal">
         <ul class="menu ">
+            <button class="close__menu"></button>
             <li class="menu__list-item"><a class="menu__list-link" href="./catalog.html">Catalog</a></li>
             <li class="menu__list-item"><a class="menu__list-link" href="./toys.html">About US</a></li>
             <li class="menu__list-item"><a class="menu__list-link" href="./blog.html">Blog</a></li>

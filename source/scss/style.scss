@@ -20,6 +20,7 @@
 @import "_blocks/link";
 @import "_blocks/header";
 @import "_blocks/button";
+@import "_blocks/pages";
 @import"contact";
 @import"blog";
 @import"catalog";
@@ -46,22 +47,32 @@
   Не стал выносить в отдельный файл, но если бы блок coming-soon действительно был бы нужен,
   то он должен был бы быть в файле _blocks/coming-soon.scss
 */
+      
+.index__page {
+  overflow: hidden;
+}
 .banner {
   display: block;
   background: #EEE4DB;
   height: 411px;
   margin-top: 125px;
-  margin-left: 115px;
   @media screen and (max-width: 768px) {
-    width: 768px;
+    width: 648px;
+  }
+  @media  screen and (max-width: 375px) {
+    width: 375px;
   }
   .switch__list {
     flex-direction: column;
     display: flex;
     margin-top: -380px;
     @media screen and (max-width: 768px) {
-      margin-left: -50px;
+       margin-left: -50px;
     }
+    @media screen and (max-width: 375px) {
+      margin-left: 252px;
+      margin-top: -410px;
+   }
   }
   
   .switch__number {
@@ -71,6 +82,13 @@
     line-height: 73px;
     color: rgba(30, 6, 6, 0.05);
     margin-left: 33px;
+  }
+
+  .switch__active{
+    background:rgba(30, 6, 6, 0.6);
+    width: 31px;
+    height: 3px;
+    margin-left: 32px;
   }
   
   .switch__rectangel-one {
@@ -101,10 +119,20 @@
   }
        
   &__list {
+    display: flex;
+    flex-direction: column;
     width: 307px;
     height: 400px;
     margin-left: 132px;
     padding-top: 60px;
+    @media screen and (max-width: 768px) {
+      margin-left: -32px;
+      display: flex;
+      align-items: baseline;
+    }
+    @media screen and (max-width: 375px) {
+      width: 276px;
+    }
   }
   &__text {
   font-style: normal;
@@ -113,10 +141,14 @@
   color: #1E0606;
   width: 307px;
   height: 88px;
-  //margin-top: 90px;
-  // margin-left: 132px;
   @media screen and (max-width: 768px) {
     margin-left: 30px;
+  }
+  @media screen and (max-width: 375px) {
+    width: 276px;
+    font-size: 36px;
+    line-height: 110%;
+    margin-top: -10px;
   }
   }
   &__btn {
@@ -130,12 +162,15 @@
   align-items: center;
   padding: 9px 22px;
   gap: 10px;
+  width: 161px;
   background: #1E0606;
   color: #FFFFFF;
-  //margin-top: 5px;
-  // margin-left: 135px;
-  @media screen and (max-width: 768px) {
-    // margin-left: 30px;
+  @media screen and (max-width: 375px) {
+    width: 142px;
+    padding: 8px 20px;
+    height: 36px;
+    font-size: 14px;
+    margin-top: -10px;
   }
   }
   &__img {
@@ -143,7 +178,12 @@
     margin-left: 440px;
     margin-top: -43px;
     @media screen and (max-width: 768px) {
-      display: none;
+      left: -125px;
+      top: 446px;
+    }
+    @media screen and (max-width: 375px) {
+      left: -96%;
+      top: 113%;
     }
   }
   &__country {
@@ -152,10 +192,12 @@
   font-size: 20px;
   line-height: 26px;
   color: #1E0606;
-  //margin-top: 195px;
-  // margin-left: 130px;
   @media screen and (max-width: 768px) {
     margin-left: 30px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 18px;
+    margin-top: -27px;
   }
   }
   &__cost{
@@ -169,12 +211,15 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    //margin-top: 376px;
     position: absolute;
     margin-top: 10px;
     @media screen and (max-width: 768px) {
-      width: 768px;
+      width: 648px;
       margin-left: -20px;
+      margin-top: -48px;
+    }
+    @media  screen and (max-width: 375px) {
+      width: 375px;
     }
   } 
 }
@@ -182,34 +227,41 @@
 .categoryes {
   display: flex;
   flex-direction: column;
-  // margin-left: -40px;
   margin-top: 90px;
-  padding-left: 110px;
   height: 421px;
   &__title {
     width: 454px;
-    color: var(--black, #1E0606);
     font-size: 38px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    margin-left: 360px;
+    @media screen and (max-width: 375px) {
+      width: 287px;
+      font-size: 24px;
+      margin-left: -360px;
+    }
   }
   &__list {
     display: flex;
     align-items: center;
     column-gap: 20px;
     padding: 0px 0px;
+    @media  screen and (max-width: 768px) {
+      width: 768px;
+      overflow: scroll;
+      padding: 0px 60px;
+    }
     :hover {
       text-decoration-line: underline;
       color: #FFFFFF;
-  }
-  :active {
-      text-decoration-line: underline;
-  }
+    }
+    :active {
+        text-decoration-line: underline;
+    }
   }
   &__list-one{
-    background: url(image.png);
     background-blend-mode: multiply;
     width: 280px;
     height: 270px;
@@ -230,7 +282,6 @@
     margin-left: 53px;
   }
   &__list-two {
-    background: url(image.png);
     background-blend-mode: multiply;
     background: #EADDD3;
     width: 280px;
@@ -249,7 +300,6 @@
     color: #FFFFFF;
   }
   &__list-three {
-    background: url(image.png);
     background-blend-mode: multiply;
     width: 280px;
     height: 270px;
@@ -268,7 +318,6 @@
   color: #FFFFFF;
   } 
   &__list-four {
-  background: url(image.png);
   background-blend-mode: multiply;
   background: #D5D4E1;
   width: 280px;
@@ -292,7 +341,7 @@
 .switch__category {
   display: flex;
   column-gap: 6px;
-  padding: 0px 0px;
+
 }
 .switch__category-item {
   font-style: normal;
@@ -302,7 +351,6 @@
   color: #1E0606;
   height: 44px;
   width: 580px;
-  margin-left: 16px;
   margin-top: 12px;
 }
 
@@ -314,20 +362,10 @@
   background: rgba(112, 187, 220, 0.2);
 }
 
-.switch__active{
-  background:rgba(30, 6, 6, 0.6);
-  width: 31px;
-  height: 3px;
-  margin-left: 32px;
-}
 
-.switch {
-  padding-left: 110px;
-}
-  
+
   .delivery {
     display: flex;
-    padding-left: 110px;
     height: 559px;
     margin-top: 90px;
     @media screen and (max-width: 375px) {
@@ -380,6 +418,12 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  @media  screen and (max-width: 768px) {
+    width: 314px;
+  }
+  @media  screen and (max-width: 375px) {
+    width: 335px;
+  }
   }
   &__paragraph-two {
     width: 480px;
@@ -389,6 +433,12 @@
     font-size: 16px;
     line-height: 22px;
     color: #1E0606;
+@media  screen and (max-width: 768px) {
+  width: 314px;
+}
+@media  screen and (max-width: 375px) {
+  width: 335px;
+}
   }
   &__button {
     display: flex;
@@ -413,7 +463,7 @@
     margin-left: 120px;
     @media screen and (max-width: 375px) {
       display: flex;
-      
+      margin-left: auto;
     }
   }
 }
@@ -422,18 +472,20 @@
   display: flex;
   column-gap: 127px;
   margin-top: 70px;
-  padding-left: 55px;
-  @media screen and (max-width: 375px) {
-    display: flex;
-    flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      column-gap: 70px;
+    }
+  
+    @media screen and (max-width: 375px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
-}
 
 .design {
   display: flex;
   column-gap: 57px; 
-  margin-left: -43px;
-  padding-left: 110px;
   margin-top: 80px;
   height: 410px;
   @media screen and (max-width: 375px) {
@@ -443,7 +495,6 @@
 }
 
 .about {
-  margin-left:43px ;
   width: 543px;
   height: 228px;
   background: #E1F0F7;
@@ -452,6 +503,7 @@
   }
   @media screen and (max-width: 375px) {
     width: 375px;
+    margin-left: -20px;
   }
   
   &__title {
@@ -507,7 +559,8 @@
   height: 209px;
   padding: 0 30px 102px 30px;
   @media screen and (max-width: 768px) {
-    width: 314px;
+    width: 375px;
+    margin-left: -20px;
   }
   &__title {
     font-style: normal;
@@ -536,23 +589,37 @@
       width: 284px;
     }
   }
+  &__maps {
+    width: 480px;
+    height: 200px;
+    @media  screen and (max-width: 768px) {
+      width: 284px;
+      height: 151px;
+      margin-left: -7px;
+    }
+  }
 }
 
-.maps {
-  width: 483px;
-  height: 196px;
-  background: url(.png);
-}
+
 
 .popup {
   position: absolute;
-  left: 550px;
-  top: 300px;
   display: none;
 }
 
 .open {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2000px;
+  height: 950px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(125, 151, 218, 0.80);
+  @media screen and (max-width: 768px) {
+    width: 768px;
+  }
 }
 
 .close {
@@ -561,6 +628,9 @@
   transform: rotate(90deg);
   color: #FFFFFF;
   background-color: transparent;
+  position: absolute;
+  top: 17%;
+  left: 68%;
 }
 
 .button__contact {

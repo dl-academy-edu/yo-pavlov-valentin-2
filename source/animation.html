@@ -22,19 +22,19 @@
         
         <!-- endbuild -->
 </head>
-@@include('blocks/header.html')
 <audio autoplay>
     <source    src="./img/music.mp3"   type="audio/mpeg"  >
   </audio>
 <body>
+    @@include('blocks/header.html')
     <main class="animation">
-        <section class="animation__nav">
+        <section class="animation__nav container">
             <h2 class="animation__nav-title">Animation scene</h2>
-            <ul class="animation__nav-list">
-             <p class="animation__home">home</p>
-             <img class="animation__nav-img" src="../img/vectore-home.png" alt="#">
-             <p class="animation__title">Animation</p>
-            </ul>
+            <div class="animation__nav-list">
+                <p class="animation__home">home</p>
+                <img class="animation__nav-img" src="../img/vectore-home.png" alt="#">
+                <p class="animation__title">Animation</p>
+            </div>
        </section>
        <section>
             <ul class="animation__list">
